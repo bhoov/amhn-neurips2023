@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;600&display=swap');
+
+$color-accent: #4CAF50;
+$color-secondary: #2196F3;
+$color-bg: #1A1A1A;
+$color-fg: #FFFFFF;
+// Wes Anderson
+$wa-bg: #232C33;
+$wa-fg: #F2EFE4;
+$wa-primary: #FFB5A7;
+$wa-secondary: #9AD1D4;
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: $wa-bg;
+  color: $wa-fg;
+  height: 100%;
+  margin: 0
+}
+
+.contentWrap {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 768px;
+  width: 100%;
+}
