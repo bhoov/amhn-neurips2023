@@ -1,0 +1,206 @@
+- name: Sugandha Sharma
+  email:
+  blurb:
+  affiliations:
+    - MIT
+  headshot:
+  url:
+
+- name: Hamza Tahir Chaudhry
+  email:
+  blurb:
+  affiliations:
+    - Harvard
+  headshot:
+  url:
+
+- name: Jacob Zavatone-Veth
+  email:
+  blurb:
+  affiliations:
+    - Harvard
+  headshot:
+  url:
+
+- name: Tom Burns
+  email:
+  blurb:
+  affiliations:
+    - OIST
+  headshot:
+  url:
+
+- name: Bao Pham
+  email:
+  blurb:
+  affiliations:
+    - RPI
+  headshot:
+  url:
+
+# - name: Trenton Bricken
+#   email:
+#   blurb:
+#   affiliations:
+#     - Anthropic
+#   headshot:
+#   url:
+
+- name: Mikail Khona
+  email:
+  blurb:
+  affiliations:
+    - MIT
+  headshot:
+  url:
+
+- name: Hidenori Tanaka
+  email:
+  blurb:
+  affiliations:
+    - Harvard
+  headshot:
+  url:
+
+# - name: Dongsung Huh
+#   email:
+#   blurb:
+#   affiliations:
+#     - IBM Research
+#   headshot:
+#   url:
+
+# - name: Bishwajit Saha
+#   email:
+#   blurb:
+#   affiliations:
+#     - RPI
+#   headshot:
+#   url:
+
+# - name: Danil Tyulmankov
+#   email:
+#   blurb:
+#   affiliations:
+#     - Columbia
+#   headshot:
+#   url:
+
+# - name: Zachary Sethna
+#   email:
+#   blurb:
+#   affiliations:
+#     - MSK
+#   headshot:
+#   url:
+
+- name: Satyananda Kashyap
+  email:
+  blurb:
+  affiliations:
+    - IBM Research
+  headshot:
+  url:
+
+# - name: Beren Millidge
+#   email:
+#   blurb:
+#   affiliations:
+#     - Oxford
+#   headshot:
+#   url:
+
+- name: Tankut Can
+  email:
+  blurb:
+  affiliations:
+    - IAS
+  headshot:
+  url:
+- name: Andrey Gromov
+  email:
+  blurb:
+  affiliations:
+    - FAIR, Meta AI
+  headshot:
+  url:
+
+- name: Paolo Glorioso
+  email:
+  blurb:
+  affiliations:
+    - Stanford
+  headshot:
+  url:
+
+# - name: Tom George
+#   email:
+#   blurb:
+#   affiliations:
+#     - UCL
+#   headshot:
+#   url:
+
+- name: Andy Keller
+  email:
+  blurb:
+  affiliations:
+    - University of Amsterdam
+  headshot:
+  url:
+
+# - name: Siavash Golkar
+#   email:
+#   blurb:
+#   affiliations:
+#     - Flatiron Institute
+#   headshot:
+#   url:
+
+- name: David Lipshutz
+  email:
+  blurb:
+  affiliations:
+    - Flatiron Institute
+  headshot:
+  url:
+
+# - name: Arian Khorasani
+#   email:
+#   blurb:
+#   affiliations:
+#     - MILA
+#   headshot:
+#   url:
+
+- name: Jascha Achterberg
+  email:
+  blurb:
+  affiliations:
+    - Cambridge University
+  headshot:
+  url:
+
+# - name: Binxu Wang
+#   email:
+#   blurb:
+#   affiliations:
+#     - Harvard
+#   headshot:
+#   url:
+
+- name: Francisco Acosta
+  email:
+  blurb:
+  affiliations:
+    - UCSB
+  headshot:
+  url:
+
+- name: Leo Kozachkov
+  email:
+  blurb:
+  affiliations:
+    - MIT
+  headshot:
+  url:

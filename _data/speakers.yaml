@@ -1,0 +1,36 @@
+- name: John Hopfield
+  headshot: img/JohnHopfield_0.png
+  blurb: John Hopfield is a professor emeritus at Princeton University
+  affiliations:
+    - Princeton
+    
+- name: Dmitry Krotov
+  headshot: img/dmitry-krotov-1536x997.png
+  blurb: Dmitry Krotov is a Research Scientist at IBM Research and the MIT-IBM Watson AI Lab.
+  affiliations:
+    - IBM Research
+    - MIT-IBM AI Lab
+    
+- name: Sepp Hochreiter
+  headshot: img/SeppHochreiterPortrait2.png
+  blurb: Sepp Hochreiter is a leading researcher at ...
+  affiliations:
+    - University of Lenz
+
+- name: Ila Fiete
+  headshot: img/MIT-Fiete-Ila-01_900x600.png
+  blurb: ???
+  affiliations:
+    - MIT
+    
+- name: Carlo Lucibello
+  headshot: img/Lucibello_LAST.png
+  blurb: Carlo Lucibello is ...
+  affiliations:
+    - Bocconi University
+    
+- name: Krzysztof Choromanski
+  headshot: img/krzysztof_choromanski_photo.png
+  blurb: Krzystof Choromanski is ...
+  affiliations:
+    - Columbia

@@ -1,0 +1,53 @@
+- name: Hilde Kuehne
+  email: kuehne@uni-frankfurt.de
+  blurb: >-
+    Prof. Dr. Hilde Kuehne is Head of Computer Vision and Machine Learning at the Computational Vision & Artificial Intelligence Group at the Goethe University Frankfurt, and an affiliated professor at the MIT-IBM Watson AI Lab. Her research focuses on learning without labels and multimodal video understanding.  She has organised various workshops in the field, served as area chair for CVPR and ICCV, and as program chair for WACV. Beyond her work, she is committed to bringing more diversity to STEM, and she is a board member of the Women in Computer Vision Initiative.
+  affiliations:
+    - Goethe University Frankfurt
+  headshot: 
+  url: 
+
+- name: Daniel D. Lee
+  email: ddl46@cornell.edu
+  blurb: >-
+    Daniel is the Tisch University Professor in Electrical and Computer Engineering at Cornell Tech and his research group works on latent variable machine learning models, computational neuroscience, and robotic systems. In the past, he has organized a number of NeurIPS workshops, served as NeurIPS Workshops Chair, NeurIPS Program Chair, and on the NeurIPS Executive Board.
+  affiliations:
+    - Cornell University
+  headshot: 
+  url:
+
+- name: Cengiz Pehlevan
+  email: cpehlevan@seas.harvard.edu
+  blurb: >-
+    Cengiz is an Assistant Professor of Applied Mathematics at Harvard University. His research interests are in theoretical neuroscience and theory of neural computation. Cengiz has been serving as a NeurIPS area chair for the last few years. He has not organized a workshop in NeurIPS before.
+  affiliations:
+    - Harvard University
+  headshot: 
+  url:
+
+- name: Parikshit Ram
+  email: parikshit.ram@ibm.com
+  blurb: >-
+    Pari has a broad interest in varied fields of machine learning, from efficient similarity search to bilevel optimization and automated machine learning. Relevant to this workshop, he is working on the use of AMs for various forms of end-to-end differentiable unsupervised learning such as clustering.
+  affiliations:
+    - IBM Research
+  headshot: 
+  url:
+
+- name: Mohammed J. Zaki
+  email: zaki@cs.rpi.edu
+  blurb: >-
+    Zaki is a Professor and Department Head of Computer Science at RPI. His research interests focus on novel data mining and machine learning techniques, particularly for learning from graph structured and textual data, with applications in bioinformatics, personal health and financial analytics. He founded the BIOKDD workshop (now in its 22nd year; with SIGKDD). He has extensive experience in organizing workshops and conferences, have chaired all major conferences in data mining, and having served as area chair and SPC for all leading AI/ML conferences. He is a Fellow of the ACM, IEEE, and AAAS.
+  affiliations:
+    - RPI
+  headshot: 
+  url:
+
+- name: Lenka Zdeborová
+  email: lenka.zdeborova@epfl.ch
+  blurb: >-
+    Lenka’s research interests are in applications of concepts from statistical physics, such as advanced mean field methods, replica methods and related message-passing algorithms, to problems in machine learning, signal processing, inference and optimization. She is an experienced organizer of dozens of schools, workshops and conferences in physics, machine learning and their interface.
+  affiliations:
+    - EPFL
+  headshot: 
+  url:
