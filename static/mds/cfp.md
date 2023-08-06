@@ -1,8 +1,9 @@
+<base target="_blank">
+
 We invite submissions on novel research results (theoretical and empirical),
 software frameworks and abstractions, benchmarks, demos, visualizations, and
 work-in-progress research. The format of submissions is **4-page papers** (
-excluding
-references) submitted to OpenReview. The reviews will not be shared publicly.
+excluding references) submitted to [OpenReview](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN). The reviews will not be shared publicly.
 
 ## Scope
 
@@ -30,7 +31,7 @@ to):
 
 ## Submission
 
-The OpenReview submission is now open: [link](#)
+The OpenReview submission is now open: [link](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN)
 
 The submission deadline is: September 29 2023 23:59 AOE
 
