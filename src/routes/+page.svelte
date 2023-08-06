@@ -5,6 +5,7 @@
   import AMNH_Organizers from "../components/AMNH_Organizers.svelte";
   import SvelteMarkdown from "svelte-markdown";
   import AMNH_Speakers from "../components/AMNH_Speakers.svelte";
+  import AMNH_Panelists from "../components/AMNH_Panelists.svelte";
 
   let sourcePC = ``
 
@@ -32,19 +33,28 @@
 
 
         <div id="speakers"></div>
-        <h3>Speakers</h3>
+        <h3>Invited Speakers</h3>
         <p> We are very pleased to welcome a group of amazing researchers in the field
             to discuss with. </p>
         <AMNH_Speakers/>
 
+        <div id="panelists">
+        <h3>Panelists</h3>
+        <p> We end our workshop with a panel on the future of software engineering built around Associative Memories. </p>
+
+        <AMNH_Panelists/>
+        </div>
 
         <div id="organizers"></div>
         <h3> Organizers</h3>
         <AMNH_Organizers/>
+
+
         <h3> Program Commitee</h3>
         <p>
             <SvelteMarkdown source="{sourcePC}"/>
         </p>
+
 
         <p style="min-height: 500px;"></p>
 
