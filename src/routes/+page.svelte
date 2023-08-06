@@ -6,12 +6,19 @@
   import SvelteMarkdown from "svelte-markdown";
   import AMNH_Speakers from "../components/AMNH_Speakers.svelte";
   import AMNH_Panelists from "../components/AMNH_Panelists.svelte";
+  import {onMount} from "svelte"
 
   let sourcePC = ``
+
+  export let data;
 
   fetch('../mds/pc.md')
     .then(response => response.text())
     .then(t => sourcePC = t)
+
+  onMount(() => {
+    console.log(data)
+  })
 
 </script>
 
