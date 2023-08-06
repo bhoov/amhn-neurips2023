@@ -37,18 +37,18 @@
       org: "Google Research",
       img: "https://www.engineering.columbia.edu/files/seas/styles/300x300/public/content/bio_profile_image/2021/07/krzysztof_choromanski_photo.jpg?itok=M7NOZprd"
     },
-    {
-      name: "Benjamin Hoover",
-      url: "https://bhoov.com/",
-      org: "Georgia Tech",
-      img: "https://bhoov.com/imgs/people/me-headshot-230426.jpg"
-    },
-    {
-      name: "Johannes Brandstetter",
-      url: "https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/ass-prof-dr-johannes-brandstetter/",
-      org: "JKU Linz",
-      img: "https://www.jku.at/fileadmin/_processed_/0/e/csm_Brandstetter_e9eb6cfc75.jpg"
-    },
+    // {
+    //   name: "Benjamin Hoover",
+    //   url: "https://bhoov.com/",
+    //   org: "Georgia Tech",
+    //   img: "https://bhoov.com/imgs/people/me-headshot-230426.jpg"
+    // },
+    // {
+    //   name: "Johannes Brandstetter",
+    //   url: "https://www.jku.at/institut-fuer-machine-learning/ueber-uns/team/ass-prof-dr-johannes-brandstetter/",
+    //   org: "JKU Linz",
+    //   img: "https://www.jku.at/fileadmin/_processed_/0/e/csm_Brandstetter_e9eb6cfc75.jpg"
+    // },
   ]
 
 
