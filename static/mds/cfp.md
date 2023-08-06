@@ -36,7 +36,7 @@ The OpenReview submission is now open: [link](https://openreview.net/group?id=Ne
 The submission deadline is: September 29 2023 23:59 AOE
 
 The format of submissions is 4-page papers (+ references) using the workshop’s
-[LaTeX template](). Supplementary materials / appendices after the references
+[LaTeX template](/amhn2023_latex_template.zip "download"). Supplementary materials / appendices after the references
 are allowed and do not count towards the page limit. Submissions should be
 anonymized and should not include any identifying information about author
 identities or affiliations. There are no formal proceedings generated from this
