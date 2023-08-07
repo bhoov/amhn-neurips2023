@@ -34,7 +34,7 @@
           venue
         };
       })
-      .sort((a, b) => b.year - a.year);
+      // .sort((a, b) => b.year - a.year);
   }
 
 </script>
@@ -53,23 +53,13 @@
           style="display: flex; flex-direction: column;gap:.1em; width:200px;"
           href={url ? url : "#"}
         >
-          <!--            <div style="font-weight: bold"> {year}</div>-->
           <div style="font-weight: bold">{title} ({year})</div>
-          <div style="font-size: small">{authors.join(", ")}</div>
-          <div style="font-size: small; font-style: italic;">
+          <div style="font-size: small; margin: 0.2rem 0;">{authors.join(", ")}</div>
+          <div style="font-size: small; font-style: italic; color: gray">
             {venue}
-            <!-- {proceedings}{volume ? `, vol ${volume}` : ""}{page
-              ? `, pp ${page}`
-              : ""} -->
           </div>
-          <!--            <div style="display: flex; flex-direction: row; gap: .5em; flex-wrap: wrap;">-->
-          <!--                {#each authors as author}-->
-          <!--                    <div>{author}</div>-->
-          <!--                {/each}-->
-          <!--            </div>-->
         </a>
       {/each}
-      <!--    <pre>{JSON.stringify(source, null, 2)}</pre>-->
     </div>
   </div>
 </div>
