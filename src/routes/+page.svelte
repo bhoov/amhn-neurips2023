@@ -1,21 +1,10 @@
 <script>
-  import NavBar from "../lib/components/NavBar.svelte";
-  import HeroSection from "../lib/components/HeroSection.svelte";
-  import AMNH_NavBar from "../lib/components/AMNH_NavBar.svelte";
-  import AMNH_Organizers from "../lib/components/AMNH_Organizers.svelte";
-  import SvelteMarkdown from "svelte-markdown";
-  import AMNH_Speakers from "../lib/components/AMNH_Speakers.svelte";
-  import AMNH_Panelists from "../lib/components/AMNH_Panelists.svelte";
+  import HeroSection from "$lib/components/HeroSection.svelte";
+  import AMNH_NavBar from "$lib/components/AMNH_NavBar.svelte";
   import { onMount } from "svelte";
   import PersonCard from "$lib/components/PersonCard.svelte";
 
-  let sourcePC = ``;
-
   export let data;
-
-  fetch("../mds/pc.md")
-    .then((response) => response.text())
-    .then((t) => (sourcePC = t));
 
   onMount(() => {
     console.log(data);
@@ -37,12 +26,13 @@
       field with the rest of the NeurIPS community.
     </p>
 
-    <div id="speakers" />
-    <h2>Invited Speakers</h2>
-    <p>
-      We are very pleased to welcome a group of amazing researchers in the field
-      to discuss with.
-    </p>
+    <div id="speakers">
+      <h2>Invited Speakers</h2>
+      <p>
+        We are very pleased to welcome a group of amazing researchers in the
+        field to discuss with.
+      </p>
+    </div>
 
     <div class="card-container">
       {#each data.speakers as person}
@@ -64,8 +54,8 @@
       </div>
     </div>
 
-    <div id="organizers" >
-    <h2>Organizers</h2>
+    <div id="organizers">
+      <h2>Organizers</h2>
       <div class="card-container">
         {#each data.organizers as person}
           <PersonCard {person} />
@@ -73,10 +63,14 @@
       </div>
     </div>
 
-    <h2>Program Commitee</h2>
-    <p>
-      <SvelteMarkdown source={sourcePC} />
-    </p>
+    <div id="committee">
+      <h2>Program Commitee</h2>
+      <ul>
+        {#each data.committee as person}
+          <li><a href={person.url || "#"} target="_blank" style="text-decoration:none; color:inherit;">{person.name}</a> ({person.affiliations.join(", ")})</li>
+        {/each}
+      </ul>
+    </div>
 
     <p style="min-height: 500px;" />
   </div>

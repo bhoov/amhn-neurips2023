@@ -1,0 +1,1 @@
+export const prettyJoinWords = (words: string[]) => words.join(`<span class="word-sep">&#x2022;</span>`)

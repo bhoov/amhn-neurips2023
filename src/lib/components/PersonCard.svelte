@@ -1,5 +1,6 @@
 <script lang="ts">
   import {pathJoin} from "$lib/etc/pathJoin"
+  import {prettyJoinWords} from "$lib/etc/prettyJoinWords"
 
   interface Person {
     name: string
@@ -15,7 +16,7 @@
 
   $: img = person.headshot ? pathJoin([baseHeadshotDir, person.headshot]) : ""
   $: url = person.url || "#"
-  $: affiliation = person.affiliations.join(`<span class="word-sep">&#x2022;</span>`)
+  $: affiliation = prettyJoinWords(person.affiliations)
 </script>
 
 <a href={url} class="portraitCard" target="_blank">
