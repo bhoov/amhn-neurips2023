@@ -33,7 +33,7 @@ export async function load() {
     // Load papers
     const bibtexStr = await fser.readFile("_data/papers.bib", 'utf8')
     const bibtexJson = await Cite.async(bibtexStr, {generateGraph: false})
-    db['related_papers'] = bibtexJson.data
+    db['related_papers'] = bibtexJson.format("data", {type: "object"})
 
     return db
 }

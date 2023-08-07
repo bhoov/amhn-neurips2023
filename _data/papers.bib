@@ -19,7 +19,6 @@
   doi = {10.48550/arXiv.2306.04532},
   url = {http://arxiv.org/abs/2306.04532},
   urldate = {2023-08-07},
-  abstract = {Sequence memory is an essential attribute of natural and artificial intelligence that enables agents to encode, store, and retrieve complex sequences of stimuli and actions. Computational models of sequence memory have been proposed where recurrent Hopfield-like neural networks are trained with temporally asymmetric Hebbian rules. However, these networks suffer from limited sequence capacity (maximal length of the stored sequence) due to interference between the memories. Inspired by recent work on Dense Associative Memories, we expand the sequence capacity of these models by introducing a nonlinear interaction term, enhancing separation between the patterns. We derive novel scaling laws for sequence capacity with respect to network size, significantly outperforming existing scaling laws for models based on traditional Hopfield networks, and verify these theoretical results with numerical simulation. Moreover, we introduce a generalized pseudoinverse rule to recall sequences of highly correlated patterns. Finally, we extend this model to store sequences with variable timing between states' transitions and describe a biologically-plausible implementation, with connections to motor neuroscience.},
   archiveprefix = {arxiv},
   keywords = {Computer Science - Neural and Evolutionary Computing},
   file = {/Users/hoo/Zotero/storage/2MFTBNYC/Chaudhry et al. - 2023 - Long Sequence Hopfield Memory.pdf}
@@ -37,10 +36,13 @@
   file = {/Users/hoo/Zotero/storage/AUAUBS3U/Demircigil et al. - 2017 - On a model of associative memory with huge storage.pdf}
 }
 
-@misc{f{\"u}rst2022cloob,
+@inproceedings{f{\"u}rst2022cloob,
   title = {{{CLOOB}}: {{Modern}} Hopfield Networks with {{InfoLOOB}} Outperform {{CLIP}}},
+  booktitle = {Advances in Neural Information Processing Systems},
   author = {F{\"u}rst, Andreas and Rumetshofer, Elisabeth and Tran, Viet Thuong and Ramsauer, Hubert and Tang, Fei and Lehner, Johannes and Kreil, D P and Kopp, Michael K and Klambauer, G{\"u}nter and {Bitto-Nemling}, Angela and Hochreiter, Sepp},
   year = {2022},
+  volume = {35},
+  pages = {20450--20468},
   url = {https://openreview.net/forum?id=qw674L9PfQE},
   file = {/Users/hoo/Zotero/storage/JEGZM3BQ/Fürst et al. - 2022 - CLOOB Modern Hopfield Networks with InfoLOOB Outp.pdf}
 }
@@ -57,7 +59,6 @@
   doi = {10.48550/arXiv.2302.07253},
   url = {http://arxiv.org/abs/2302.07253},
   urldate = {2023-08-07},
-  abstract = {Transformers have become the de facto models of choice in machine learning, typically leading to impressive performance on many applications. At the same time, the architectural development in the transformer world is mostly driven by empirical findings, and the theoretical understanding of their architectural building blocks is rather limited. In contrast, Dense Associative Memory models or Modern Hopfield Networks have a well-established theoretical foundation, but have not yet demonstrated truly impressive practical results. We propose a transformer architecture that replaces the sequence of feedforward transformer blocks with a single large Associative Memory model. Our novel architecture, called Energy Transformer (or ET for short), has many of the familiar architectural primitives that are often used in the current generation of transformers. However, it is not identical to the existing architectures. The sequence of transformer layers in ET is purposely designed to minimize a specifically engineered energy function, which is responsible for representing the relationships between the tokens. As a consequence of this computational principle, the attention in ET is different from the conventional attention mechanism. In this work, we introduce the theoretical foundations of ET, explore it's empirical capabilities using the image completion task, and obtain strong quantitative results on the graph anomaly detection task.},
   archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Condensed Matter - Disordered Systems and Neural Networks,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning},
   file = {/Users/hoo/Zotero/storage/5J3NJC24/Hoover et al. - 2023 - Energy Transformer.pdf}
@@ -89,7 +90,6 @@
   pages = {3088--92},
   doi = {10.1073/pnas.81.10.3088},
   url = {https://www.pnas.org/doi/10.1073/pnas.81.10.3088},
-  abstract = {A model for a large network of "neurons" with a graded response (or sigmoid input-output relation) is studied. This deterministic system has collective properties in very close correspondence with the earlier stochastic model based on McCulloch - Pitts neurons. The content- addressable memory and other emergent collective properties of the original model also are present in the graded response model. The idea that such collective properties are used in biological systems is given added credence by the continued presence of such properties for more nearly biological "neurons." Collective analog electrical circuits of the kind described will certainly function. The collective states of the two models have a simple correspondence. The original model will continue to be useful for simulations, because its connection to graded response systems is established. Equations that include the effect of action potentials in the graded response system are also developed.},
   file = {/Users/hoo/Zotero/storage/J3A6F7AJ/Hopfield - 1984 - Neurons With Graded Response Have Collective Compu.pdf}
 }
 
@@ -105,7 +105,6 @@
   doi = {10.48550/arXiv.2212.05563},
   url = {http://arxiv.org/abs/2212.05563},
   urldate = {2023-08-07},
-  abstract = {The General Associative Memory Model (GAMM) has a constant state-dependant energy surface that leads the output dynamics to fixed points, retrieving single memories from a collection of memories that can be asynchronously preloaded. We introduce a new class of General Sequential Episodic Memory Models (GSEMM) that, in the adiabatic limit, exhibit temporally changing energy surface, leading to a series of meta-stable states that are sequential episodic memories. The dynamic energy surface is enabled by newly introduced asymmetric synapses with signal propagation delays in the network's hidden layer. We study the theoretical and empirical properties of two memory models from the GSEMM class, differing in their activation functions. LISEM has non-linearities in the feature layer, whereas DSEM has non-linearity in the hidden layer. In principle, DSEM has a storage capacity that grows exponentially with the number of neurons in the network. We introduce a learning rule for the synapses based on the energy minimization principle and show it can learn single memories and their sequential relationships online. This rule is similar to the Hebbian learning algorithm and Spike-Timing Dependent Plasticity (STDP), which describe conditions under which synapses between neurons change strength. Thus, GSEMM combines the static and dynamic properties of episodic memory under a single theoretical framework and bridges neuroscience, machine learning, and artificial intelligence.},
   archiveprefix = {arxiv},
   keywords = {Computer Science - Neural and Evolutionary Computing},
   file = {/Users/hoo/Zotero/storage/5JDXHZEW/Karuvally et al. - 2022 - Energy-based General Sequential Episodic Memory Ne.pdf}
@@ -134,7 +133,6 @@
   doi = {10.1038/s42254-023-00595-y},
   url = {https://www.nature.com/articles/s42254-023-00595-y},
   urldate = {2023-08-07},
-  abstract = {Over the past few years there has been a resurgence of interest in Hopfield networks of associative memory. Dmitry Krotov discusses recent theoretical advances and their broader impact in the context of energy-based neural architectures.},
   copyright = {2023 Springer Nature Limited},
   langid = {english},
   keywords = {Computer science,Statistical physics},
@@ -165,7 +163,6 @@
   doi = {10.48550/arXiv.2304.14964},
   url = {http://arxiv.org/abs/2304.14964},
   urldate = {2023-08-07},
-  abstract = {Recent generalizations of the Hopfield model of associative memories are able to store a number \$P\$ of random patterns that grows exponentially with the number \$N\$ of neurons, \$P=\textbackslash exp(\textbackslash alpha N)\$. Besides the huge storage capacity, another interesting feature of these networks is their connection to the attention mechanism which is part of the Transformer architectures widely applied in deep learning. In this work, we consider a generic family of pattern ensembles, and thanks to the statistical mechanics analysis of an auxiliary Random Energy Model, we are able to provide exact asymptotic thresholds for the retrieval of a typical pattern, \$\textbackslash alpha\_1\$, and lower bounds for the maximum of the load \$\textbackslash alpha\$ for which all patterns can be retrieved, \$\textbackslash alpha\_c\$. Additionally, we characterize the size of the basins of attractions. We discuss in detail the cases of Gaussian and spherical patterns, and show that they display rich and qualitatively different phase diagrams.},
   archiveprefix = {arxiv},
   keywords = {Computer Science - Information Theory,Condensed Matter - Disordered Systems and Neural Networks},
   file = {/Users/hoo/Zotero/storage/TQDNDVX9/Lucibello and Mézard - 2023 - The Exponential Capacity of Dense Associative Memo.pdf}
@@ -204,7 +201,6 @@
   publisher = {{Association for Computational Linguistics}},
   address = {{Kyiv}},
   url = {https://aclanthology.org/2021.ltedi-1.4},
-  abstract = {Subtle and overt racism is still present both in physical and online communities today and has impacted many lives in different segments of the society. In this short piece of work, we present how we're tackling this societal issue with Natural Language Processing. We are releasing BiasCorp, a dataset containing 139,090 comments and news segment from three specific sources - Fox News, BreitbartNews and YouTube. The first batch (45,000 manually annotated) is ready for publication. We are currently in the final phase of manually labeling the remaining dataset using Amazon Mechanical Turk. BERT has been used widely in several downstream tasks. In this work, we present hBERT, where we modify certain layers of the pretrained BERT model with the new Hopfield Layer. hBert generalizes well across different distributions with the added advantage of a reduced model complexity. We are also releasing a JavaScript library 3 and a Chrome Extension Application, to help developers make use of our trained model in web applications (say chat application) and for users to identify and report racially biased contents on the web respectively},
   file = {/Users/hoo/Zotero/storage/QV4BFGNZ/Onabola et al. - 2021 - HBert + BiasCorp -- Fighting Racism on the Web.pdf}
 }
 
@@ -221,7 +217,6 @@
   doi = {10.48550/arXiv.2304.13061},
   url = {http://arxiv.org/abs/2304.13061},
   urldate = {2023-08-07},
-  abstract = {In the last few years, the success of Transformers in computer vision has stimulated the discovery of many alternative models that compete with Transformers, such as the MLP-Mixer. Despite their weak induced bias, these models have achieved performance comparable to well-studied convolutional neural networks. Recent studies on modern Hopfield networks suggest the correspondence between certain energy-based associative memory models and Transformers or MLP-Mixer, and shed some light on the theoretical background of the Transformer-type architectures design. In this paper we generalize the correspondence to the recently introduced hierarchical Hopfield network, and find iMixer, a novel generalization of MLP-Mixer model. Unlike ordinary feedforward neural networks, iMixer involves MLP layers that propagate forward from the output side to the input side. We characterize the module as an example of invertible, implicit, and iterative mixing module. We evaluate the model performance with various datasets on image classification tasks, and find that iMixer reasonably achieves the improvement compared to the baseline vanilla MLP-Mixer. The results imply that the correspondence between the Hopfield networks and the Mixer models serves as a principle for understanding a broader class of Transformer-like architecture designs.},
   archiveprefix = {arxiv},
   keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing,Condensed Matter - Disordered Systems and Neural Networks},
   file = {/Users/hoo/Zotero/storage/PZ5KPJRQ/Ota and Taki - 2023 - iMixer hierarchical Hopfield network implies an i.pdf}
@@ -239,7 +234,6 @@
   pages = {15561--15583},
   publisher = {{PMLR}},
   url = {https://proceedings.mlr.press/v162/millidge22a.html},
-  abstract = {A large number of neural network models of associative memory have been proposed in the literature. These include the classical Hopfield networks (HNs), sparse distributed memories (SDMs), and more recently the modern continuous Hopfield networks (MCHNs), which possess close links with self-attention in machine learning. In this paper, we propose a general framework for understanding the operation of such memory networks as a sequence of three operations: similarity, separation, and projection. We derive all these memory models as instances of our general framework with differing similarity and separation functions. We extend the mathematical framework of Krotov et al (2020) to express general associative memory models using neural network dynamics with local computation, and derive a general energy function that is a Lyapunov function of the dynamics. Finally, using our framework, we empirically investigate the capacity of using different similarity functions for these associative memory models, beyond the dot product similarity measure, and demonstrate empirically that Euclidean or Manhattan distance similarity metrics perform substantially better in practice on many tasks, enabling a more robust retrieval and higher memory capacity than existing\&nbsp;models.},
   file = {/Users/hoo/Zotero/storage/2UZUGY7X/Millidge et al. - 2022 - Universal Hopfield Networks A General Framework f.pdf}
 }
 
@@ -264,7 +258,6 @@
   doi = {10.48550/arXiv.2306.03209},
   url = {http://arxiv.org/abs/2306.03209},
   urldate = {2023-08-07},
-  abstract = {Clustering is a widely used unsupervised learning technique involving an intensive discrete optimization problem. Associative Memory models or AMs are differentiable neural networks defining a recursive dynamical system, which have been integrated with various deep learning architectures. We uncover a novel connection between the AM dynamics and the inherent discrete assignment necessary in clustering to propose a novel unconstrained continuous relaxation of the discrete clustering problem, enabling end-to-end differentiable clustering with AM, dubbed ClAM. Leveraging the pattern completion ability of AMs, we further develop a novel self-supervised clustering loss. Our evaluations on varied datasets demonstrate that ClAM benefits from the self-supervision, and significantly improves upon both the traditional Lloyd's k-means algorithm, and more recent continuous clustering relaxations (by upto 60\% in terms of the Silhouette Coefficient).},
   archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning},
   file = {/Users/hoo/Zotero/storage/AT2GB8QD/Saha et al. - 2023 - End-to-end Differentiable Clustering with Associat.pdf}
@@ -293,7 +286,6 @@
   doi = {10.48550/arXiv.2305.11982},
   url = {http://arxiv.org/abs/2305.11982},
   urldate = {2023-08-07},
-  abstract = {Memorizing the temporal order of event sequences is critical for the survival of biological agents. However, the computational mechanism underlying sequential memory in the brain remains unclear. Inspired by neuroscience theories and recent successes in applying predictive coding (PC) to static memory tasks, in this work we propose a novel PC-based model for sequential memory, called temporal predictive coding (tPC). We show that our tPC models can memorize and retrieve sequential inputs accurately with a biologically plausible neural implementation. Importantly, our analytical study reveals that tPC can be viewed as a classical Asymmetric Hopfield Network (AHN) with an implicit statistical whitening process, which leads to more stable performance in sequential memory tasks of structured inputs. Moreover, we find that tPC with a multi-layer structure can encode context-dependent information, thus distinguishing between repeating elements appearing in a sequence, a computation attributed to the hippocampus. Our work establishes a possible computational mechanism underlying sequential memory in the brain that can also be theoretically interpreted using existing memory model frameworks.},
   archiveprefix = {arxiv},
   keywords = {Computer Science - Machine Learning,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning},
   file = {/Users/hoo/Zotero/storage/LZEA7AHT/Tang et al. - 2023 - Sequential Memory with Temporal Predictive Coding.pdf}
