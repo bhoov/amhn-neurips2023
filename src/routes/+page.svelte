@@ -26,15 +26,19 @@
       field with the rest of the NeurIPS community.
     </p>
 
-    <p><a href="/cfp" style="color:inherit;">Call for papers</a></p>
+    <div id="participation" />
+    <h2>Participation</h2>
+    <p>
+      Please see the <a href="/cfp" style="color:inherit;">Call for Papers</a> and
+      <a href="/papers" style="color:inherit;">Related Work</a> pages.
+    </p>
 
-    <div id="speakers">
-      <h2>Invited Speakers</h2>
-      <p>
-        We are very pleased to welcome a group of amazing researchers in the
-        field to discuss with.
-      </p>
-    </div>
+    <div id="speakers" />
+    <h2>Invited Speakers</h2>
+    <p>
+      We are very pleased to welcome a group of amazing researchers in the field
+      to discuss with.
+    </p>
 
     <div class="card-container">
       {#each data.speakers as person}
@@ -69,7 +73,14 @@
       <h2>Program Commitee</h2>
       <ul>
         {#each data.committee as person}
-          <li><a href={person.url || "#"} target="_blank" style="text-decoration:none; color:inherit;">{person.name}</a> ({person.affiliations.join(", ")})</li>
+          <li>
+            <a
+              href={person.url || "#"}
+              target="_blank"
+              style="text-decoration:none; color:inherit;">{person.name}</a
+            >
+            ({person.affiliations.join(", ")})
+          </li>
         {/each}
       </ul>
     </div>

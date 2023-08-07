@@ -12,7 +12,7 @@
   }
 
   export let person: Person
-  export let baseHeadshotDir = "/img/headshots/256x340"
+  export let baseHeadshotDir = "img/headshots/256x340"
 
   $: img = person.headshot ? pathJoin([baseHeadshotDir, person.headshot]) : ""
   $: url = person.url || "#"
