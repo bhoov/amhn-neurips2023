@@ -2,6 +2,7 @@ import * as path from "path"
 import * as glob from "glob"
 import * as fs from "fs-extra"
 import * as yaml from "js-yaml"
+import * as Cite from "citation-js"
 
 export const prerender = true
 export const ssr = false
@@ -30,8 +31,9 @@ export async function load() {
     db["call_for_papers"] = cfpText
 
     // Load papers
-    const papers = await fser.readJson("_data/papers.json", 'utf8')
-    db["paper_bib"] = papers
+    const bibtexStr = await fser.readFile("_data/papers.bib", 'utf8')
+    const bibtexJson = await Cite.async(bibtexStr, {generateGraph: false})
+    db['related_papers'] = bibtexJson.data
 
     return db
 }
