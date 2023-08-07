@@ -28,8 +28,8 @@
         </svg>
     </div>
     <div class="hero-text">
-        <h1 style="font-size:50px">AMHN 2023</h1>
-        <p>Associative Memory & Hopfield Networks</p>
+        <h1 style="font-size:50px">AMHN Workshop @NeurIPS 2023</h1>
+        <h3>Associative Memory & Hopfield Networks</h3>
         <!--        <button>Hire me</button>-->
     </div>
 
