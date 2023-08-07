@@ -1,4 +1,6 @@
+<!-- Open links in new tabs -->
 <base target="_blank">
+
 
 We invite submissions on novel research results (theoretical and empirical),
 software frameworks and abstractions, benchmarks, demos, visualizations, and

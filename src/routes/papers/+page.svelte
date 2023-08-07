@@ -1,5 +1,5 @@
 <script lang="ts">
-  import AMNH_NavBar from "../../components/AMNH_NavBar.svelte";
+  import AMNH_NavBar from "$lib/components/AMNH_NavBar.svelte";
 
   export let data;
 

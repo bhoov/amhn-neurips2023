@@ -3,11 +3,9 @@
 
   import SvelteMarkdown from "svelte-markdown";
 
-  let source = ``;
+  export let data
 
-  fetch("../mds/cfp.md")
-    .then((response) => response.text())
-    .then((t) => (source = t));
+  let source = data.call_for_papers;
 </script>
 
 <div>
@@ -15,10 +13,9 @@
 
   <div class="contentWrap">
     <div class="cfp content">
-      <h1>Call for Paper</h1>
+      <h1>Call for Papers</h1>
       <SvelteMarkdown {source} />
     </div>
-    <a href="amhn2023_latex_template.zip" download>LaTeX template</a>
   </div>
 </div>
 

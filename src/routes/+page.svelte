@@ -26,6 +26,8 @@
       field with the rest of the NeurIPS community.
     </p>
 
+    <p><a href="/cfp" style="color:inherit;">Call for papers</a></p>
+
     <div id="speakers">
       <h2>Invited Speakers</h2>
       <p>
