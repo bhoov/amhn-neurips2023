@@ -1,38 +1,26 @@
-# create-svelte
+# AMHN-Neurips2023 Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+> Website code for [Associative Memory and Hopfield Networks Workshop at NeurIPS 2023](amhn.vizhub.aii). Built on [SvelteKit](https://kit.svelte.dev/) and served as a static site.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+```
+npm i
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+All website data lives in the `_data` repository.
 
-To create a production version of your app:
+- All `NAME.yaml` files are stored under the global database object (explained below) as `data.NAME`
+- `papers.bib` contain all related papers mentioned on the website in bibtex, displayed in the order listed.
+- All `[NAME].md` markdown files are stored under the global database object as `data.markdown.NAME`
+- To add page `NEWROUTE` to the website, edit the file `src/routes/NEWROUTE/+page.svelte`
+- We use SvelteKit's built in static adapter as the SSG, serving website data in `_`
 
-```bash
-npm run build
-```
+**Global Database**
 
-You can preview the production build with `npm run preview`.
+The global database is exposed to every route on the website through `export let data;` on a given `+page.svelte` route. This object is created in `+layout.server.ts`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Deploying
+
+Deployed through github pages
