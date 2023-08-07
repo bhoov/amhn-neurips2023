@@ -1,36 +1,42 @@
 - name: John Hopfield
-  headshot: img/JohnHopfield_0.png
+  url: http://pni.princeton.edu/john-hopfield
+  headshot: hopfield.png
   blurb: John Hopfield is a professor emeritus at Princeton University
   affiliations:
-    - Princeton
+    - Princeton University
     
 - name: Dmitry Krotov
-  headshot: img/dmitry-krotov-1536x997.png
+  url: https://mitibmwatsonailab.mit.edu/people/dmitry-krotov/
+  headshot: krotov.png
   blurb: Dmitry Krotov is a Research Scientist at IBM Research and the MIT-IBM Watson AI Lab.
   affiliations:
     - IBM Research
     - MIT-IBM AI Lab
     
 - name: Sepp Hochreiter
-  headshot: img/SeppHochreiterPortrait2.png
+  url: https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/
+  headshot: hochreiter.png
   blurb: Sepp Hochreiter is a leading researcher at ...
   affiliations:
     - University of Lenz
 
 - name: Ila Fiete
-  headshot: img/MIT-Fiete-Ila-01_900x600.png
+  url: https://mcgovern.mit.edu/profile/ila-fiete/
+  headshot: fiete.png
   blurb: ???
   affiliations:
     - MIT
     
 - name: Carlo Lucibello
-  headshot: img/Lucibello_LAST.png
+  url: https://carlolucibello.github.io/
+  headshot: lucibello.png
   blurb: Carlo Lucibello is ...
   affiliations:
     - Bocconi University
     
 - name: Krzysztof Choromanski
-  headshot: img/krzysztof_choromanski_photo.png
+  url: https://www.engineering.columbia.edu/krzysztof-choromanski
+  headshot: choromanski.png
   blurb: Krzystof Choromanski is ...
   affiliations:
-    - Columbia
+    - Columbia University

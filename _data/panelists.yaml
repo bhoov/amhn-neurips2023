@@ -1,0 +1,21 @@
+- name: Benjamin Hoover
+  headshot: hoover.png
+  url: https://bhoov.com
+  blurb: 
+  affiliations:
+    - GA Tech
+    - IBM Research
+
+- name: Bao Pham
+  url: 
+  headshot: pham.png
+  blurb: 
+  affiliations:
+    - RPI
+
+- name: Olawale Onabola
+  url: https://mila.quebec/en/person/olawaleonabola/
+  headshot: onabola.png
+  blurb: 
+  affiliations:
+    - MILA
