@@ -11,7 +11,7 @@
   });
 </script>
 
-<AMNH_NavBar />
+<!-- <AMNH_NavBar /> -->
 <HeroSection />
 
 <div class="contentWrap">
