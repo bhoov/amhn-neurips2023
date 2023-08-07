@@ -1,11 +1,11 @@
 <script>
-  import NavBar from "../components/NavBar.svelte";
-  import HeroSection from "../components/HeroSection.svelte";
-  import AMNH_NavBar from "../components/AMNH_NavBar.svelte";
-  import AMNH_Organizers from "../components/AMNH_Organizers.svelte";
+  import NavBar from "../lib/components/NavBar.svelte";
+  import HeroSection from "../lib/components/HeroSection.svelte";
+  import AMNH_NavBar from "../lib/components/AMNH_NavBar.svelte";
+  import AMNH_Organizers from "../lib/components/AMNH_Organizers.svelte";
   import SvelteMarkdown from "svelte-markdown";
-  import AMNH_Speakers from "../components/AMNH_Speakers.svelte";
-  import AMNH_Panelists from "../components/AMNH_Panelists.svelte";
+  import AMNH_Speakers from "../lib/components/AMNH_Speakers.svelte";
+  import AMNH_Panelists from "../lib/components/AMNH_Panelists.svelte";
   import {onMount} from "svelte"
 
   let sourcePC = ``
