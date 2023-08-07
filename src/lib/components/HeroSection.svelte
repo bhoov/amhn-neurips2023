@@ -38,7 +38,7 @@
 <style lang="scss">
   .hero-image {
     //rgba(0, 0, 0, 0.5)
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/dalle_synapses.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/dalle_synapses.jpg");
     //background-image: url("https://www.w3schools.com/w3images/photographer.jpg");
     height: 70%;
     background-position: center;

@@ -1,42 +1,53 @@
 <script lang="ts">
   import AMNH_NavBar from "$lib/components/AMNH_NavBar.svelte";
+  import * as Cite from "citation-js";
+  import { onMount } from "svelte";
 
   export let data;
 
-  $: papers = data.related_papers;
+  let papers;
+  let renderItems: any[] = [];
 
-  let renderItems: any[];
-  $: if (papers) {
-    renderItems = papers
-      .map((s) => {
-        const authors = s.author.map((a) => `${a.given} ${a.family}`);
-        const proceedings = s["container-title"];
-        const publisher = s.publisher;
-        const year = s.issued?.["date-parts"][0][0];
-        const title = s.title;
-        const page = s.page;
-        const volume = s.volume;
-        const url = s.URL;
+  onMount(async () => {
+    papers = await Cite.async(data.related_papers, {
+      generateGraph: false,
+    }).then((r) => r.format("data", { type: "object" }));
 
-        const venueProceeding = [proceedings, volume ? `, vol ${volume}` : "", page ? `, pp ${page}` : ""].join("")
-        const venue = proceedings ? venueProceeding : publisher ? publisher : s.journal
-        console.log("VENUE: ", venue)
+    renderItems = papers.map((s) => {
+      const authors = s.author.map((a) => `${a.given} ${a.family}`);
+      const proceedings = s["container-title"];
+      const publisher = s.publisher;
+      const year = s.issued?.["date-parts"][0][0];
+      const title = s.title;
+      const page = s.page;
+      const volume = s.volume;
+      const url = s.URL;
 
-        return {
-          authors,
-          title,
-          year,
-          publisher,
-          proceedings,
-          page,
-          volume,
-          url,
-          venue
-        };
-      })
-      // .sort((a, b) => b.year - a.year);
-  }
+      const venueProceeding = [
+        proceedings,
+        volume ? `, vol ${volume}` : "",
+        page ? `, pp ${page}` : "",
+      ].join("");
+      const venue = proceedings
+        ? venueProceeding
+        : publisher
+        ? publisher
+        : s.journal;
+      console.log("VENUE: ", venue);
 
+      return {
+        authors,
+        title,
+        year,
+        publisher,
+        proceedings,
+        page,
+        volume,
+        url,
+        venue,
+      };
+    });
+  });
 </script>
 
 <AMNH_NavBar paralax={false} />
@@ -54,7 +65,9 @@
           href={url ? url : "#"}
         >
           <div style="font-weight: bold">{title} ({year})</div>
-          <div style="font-size: small; margin: 0.2rem 0;">{authors.join(", ")}</div>
+          <div style="font-size: small; margin: 0.2rem 0;">
+            {authors.join(", ")}
+          </div>
           <div style="font-size: small; font-style: italic; color: gray">
             {venue}
           </div>

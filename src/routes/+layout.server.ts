@@ -2,11 +2,10 @@ import * as path from "path"
 import * as glob from "glob"
 import * as fs from "fs-extra"
 import * as yaml from "js-yaml"
-// import * as Cite from "citation-js"
 
 export const prerender = true
 // export const ssr = false
-// export const trailingSlash = 'always';
+export const trailingSlash = 'always';
 
 const globber = process.env.NODE_ENV === "production" ? glob.default : glob
 const fser = process.env.NODE_ENV === "production" ? fs.default : fs
@@ -16,8 +15,6 @@ const fser = process.env.NODE_ENV === "production" ? fs.default : fs
  * @returns The yaml files converted into a database for generating the website
  */
 export async function load() {
-
-    console.log("HELLO")
 
     // Load YAMLs
     const fnames = globber.sync(`_data/*.yaml`)
@@ -34,8 +31,8 @@ export async function load() {
 
     // Load papers
     const bibtexStr = await fser.readFile("_data/papers.bib", 'utf8')
-    const bibtexJson = await Cite.async(bibtexStr, {generateGraph: false})
-    db['related_papers'] = bibtexJson.format("data", {type: "object"})
+    // const bibtexJson = await Cite.async(bibtexStr, {generateGraph: false})
+    db['related_papers'] = bibtexStr
 
     return db
 }
