@@ -9,8 +9,9 @@ export const trailingSlash = 'always';
 
 const globber = process.env.NODE_ENV === "production" ? glob.default : glob
 const fser = process.env.NODE_ENV === "production" ? fs.default : fs
+
 /**
- * Load all data for my website
+ * Load all data for the website
  * @returns The yaml files converted into a database for generating the website
  */
 export async function load() {
@@ -22,16 +23,15 @@ export async function load() {
         const fdata = await fser.readFile(fname, 'utf8')
         return yaml.load(fdata)
     }))
-
     const db = fkeys.reduce((acc, fkey, i) => { return { ...acc, [fkey]: fileData[i] } }, {})
 
     // Load markdown
-
-    // const cfpText = await fetch("_data/cfp.md").then((response) => response.text())
     const cfpText = await fser.readFile("_data/call_for_papers.md", 'utf8')
-    // console.log(cfpText)
     db["call_for_papers"] = cfpText
+
     // Load papers
+    const papers = await fser.readJson("_data/papers.json", 'utf8')
+    db["paper_bib"] = papers
 
     return db
 }
