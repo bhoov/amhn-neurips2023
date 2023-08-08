@@ -11,7 +11,7 @@
   });
 </script>
 
-<!-- <AMNH_NavBar /> -->
+<AMNH_NavBar />
 <HeroSection />
 
 <div class="contentWrap">
@@ -29,7 +29,8 @@
     <div id="participation" />
     <h2>Participation</h2>
     <p>
-      Please see the <a href="/cfp" style="color:inherit;">Call for Papers</a> and
+      Please see the <a href="/cfp" style="color:inherit;">Call for Papers</a>
+      and
       <a href="/papers" style="color:inherit;">Related Work</a> pages.
     </p>
 
@@ -84,14 +85,14 @@
         {/each}
       </ul>
     </div>
-
-    <p style="min-height: 500px;" />
   </div>
 </div>
 
 <style lang="scss">
   .card-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     gap: 5px;
     flex-wrap: wrap;
@@ -99,5 +100,9 @@
 
   h2 {
     margin: 2.5rem 0 1.5rem 0;
+  }
+
+  p {
+    line-height: 1.6rem;
   }
 </style>

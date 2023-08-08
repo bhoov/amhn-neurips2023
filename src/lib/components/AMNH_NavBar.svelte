@@ -15,8 +15,10 @@
 <div style="position: fixed; left:0; right:0;z-index:10"
      style:top={navBarTop+'px'}>
     <NavBar logoName="AMHN" navItems={[
-            {label: "Organizers", href: "/#organizers"},
             {label: "Call", href: "/cfp/"},
             {label: "Related Papers", href: "/papers/"}
+            // {label: "Organizers", href: "/#organizers"},
+            // {label: "Speakers", href: "/#speakers"},
+            // {label: "Panelists", href: "/#panelists"},
     ]}/>
 </div>
