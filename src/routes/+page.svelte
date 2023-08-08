@@ -94,15 +94,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
     flex-wrap: wrap;
   }
 
   h2 {
     margin: 2.5rem 0 1.5rem 0;
-  }
-
-  p {
-    line-height: 1.6rem;
   }
 </style>

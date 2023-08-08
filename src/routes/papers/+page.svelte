@@ -55,13 +55,13 @@
 <div class="contentWrap">
   <div class="content">
     <h1 style="margin:1.5em 0;">Related Papers</h1>
-    <div style="display: flex; flex-direction: row; gap:1em; flex-wrap: wrap;">
+    <div class="flex-container">
       {#each renderItems as { authors, title, year, proceedings, page, volume, url, venue }}
         <a
           class="portraitCard"
           class:inactive={!url}
           target="_blank"
-          style="display: flex; flex-direction: column;gap:.1em; width:200px;"
+          style="display: flex; flex-direction: column;gap:.1em;"
           href={url ? url : "#"}
         >
           <div style="font-weight: bold">{title} ({year})</div>
@@ -78,6 +78,10 @@
 </div>
 
 <style lang="scss">
+  html,
+  body {
+    min-width: 100%;
+  }
   .portraitCard {
     color: inherit;
     text-decoration: none;
@@ -88,9 +92,9 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    //align-items: center;
+    align-items: stretch;
     cursor: pointer;
-    width: 100px;
+    width: 200px;
 
     &.inactive {
       border-color: #424245;
@@ -98,7 +102,6 @@
     }
 
     .portrait {
-      max-width: 100px;
       max-height: 100px;
       border-radius: 50%;
       filter: grayscale(100%);
@@ -107,5 +110,27 @@
 
   .portraitCard:hover {
     background-color: #424245;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portraitCard {
+      width: 100%;
+    }
   }
 </style>

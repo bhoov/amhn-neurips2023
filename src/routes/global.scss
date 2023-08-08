@@ -28,10 +28,18 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
+  margin: 40px 1.5rem;
 }
 
 .content {
   max-width: 768px;
   width: 100%;
-  margin: 1.5rem;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+li {
+  margin: 0.75rem 0;
 }
