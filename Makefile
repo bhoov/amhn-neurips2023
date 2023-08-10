@@ -1,0 +1,2 @@
+deploy:
+	pnpm run deploy
