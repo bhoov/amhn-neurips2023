@@ -2,6 +2,14 @@
 
 > Website code for [Associative Memory and Hopfield Networks Workshop at NeurIPS 2023](amhn.vizhub.aii). Built on [SvelteKit](https://kit.svelte.dev/) and served as a static site.
 
+```
+conda env create -f environment.yml
+conda activate amhn-website
+# pip install -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html jax[cuda11_pip] # if GPU present
+pip install "jax[cpu]" # If no gpu
+pip install -r requirements.txt
+```
+
 ## Frontend Developing
 
 ```
@@ -25,22 +33,10 @@ The global database is exposed to every route on the website through `export let
 ### Deploying
 
 ```
-npm run deploy
+make deploy # Manually, `npm run deploy``
 ```
 
 GitHub has been setup to deploy automatically:
 
 - The `CNAME` file contains the domain name
 - `npm run deploy` automatically pushes a `build` directory to the branch `gh-pages`
-
-## Backend 
-
-> Needed for scripts to create live Hopfield Models of speakers
-
-```bash
-conda env create -f environment.yml
-conda activate amhn-website
-# pip install -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html jax[cuda11_pip] # if GPU present
-pip install "jax[cpu]" # If no gpu
-pip install -r requirements.txt
-```
