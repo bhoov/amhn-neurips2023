@@ -15,7 +15,7 @@ parser.add_argument("--label_strength", type=float, default=20_000, help="How mu
 parser.add_argument("--device", default="cpu", help="Which device to use, or cpu")
 parser.add_argument("--mem_fraction", type=float, default=0.5, help="How much memory on GPU should JAX reserve if using GPU?")
 
-args = parser.parse_args(["_data/speakers.yaml", "static/models/speakers"])
+args = parser.parse_args()
 
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = str(args.device)
