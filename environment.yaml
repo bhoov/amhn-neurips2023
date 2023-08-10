@@ -6,4 +6,5 @@ channels:
 dependencies:
   - python=3.10
   - pip>=20.0
+  - nodejs=18.16.1
   # - nb_conda # NB conda broken 23-08-09??
