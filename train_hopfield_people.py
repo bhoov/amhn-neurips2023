@@ -1,24 +1,25 @@
-"""Train a simple Hopfield Network by inserting images into each row of memory, converting the trained model into a TFJS model for serving on the frontend.
+"""Train a simple Hopfield Network by inserting images into each row of memory, 
+converting the trained model into a TFJS model for serving on the frontend.
 
 python train_hopfield_people.py data/speakers.yaml hopfield-frontend/static/models/speakers
 
 """
 import argparse
+from typing import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument("people_yaml", type=str, help="yaml file containing description of people")
 parser.add_argument("output_dir", type=str, help="Where to save all configuration for the frontend project")
+parser.add_argument("--headshot_resolution_dir", type=str, default="static/img/headshots/128x170", help="Where to look for headshots")
 parser.add_argument("--label_strength", type=float, default=20_000, help="How much more strongly to weight labels than pixels in the similarity functions")
-parser.add_argument("--gpu", type=int, default=0, help="Which GPU to use")
-parser.add_argument("--mem_fraction", type=float, default=0.5, help="How much memory on GPU should JAX reserve?")
-args = parser.parse_args()
+parser.add_argument("--device", default="cpu", help="Which device to use, or cpu")
+parser.add_argument("--mem_fraction", type=float, default=0.5, help="How much memory on GPU should JAX reserve if using GPU?")
+
+args = parser.parse_args(["_data/speakers.yaml", "static/models/speakers"])
 
 import os
-
-# Choose which gpu to use and how much memory to reserve
-os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
+os.environ["CUDA_VISIBLE_DEVICES"] = str(args.device)
 os.environ["XLA_PYTHON_CLIENT_MEM_FRACTION"]=str(args.mem_fraction)
-
 
 from loguru import logger
 from PIL import Image
@@ -43,7 +44,6 @@ from tfjs_helpers import convert_jax
 import functools as ft
 import tensorflow as tf
 
-
 output_dir = Path(args.output_dir)
 output_dir.mkdir(exist_ok=True, parents=True)
 
@@ -51,7 +51,7 @@ logger.info("Loading yaml file")
 with open(args.people_yaml, "r") as fp:
     people = yaml.safe_load(fp)
   
-headshots = [Image.open(os.path.join("hopfield-frontend/static", person["headshot"])).convert('RGB') for person in people]
+headshots = [Image.open(os.path.join(args.headshot_resolution_dir, person["headshot"])).convert('RGB') for person in people]
 assert all(h.size == headshots[0].size for h in headshots)
 
 imgs = np.stack([np.asarray(h) for h in headshots])

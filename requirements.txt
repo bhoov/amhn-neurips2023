@@ -2,3 +2,6 @@ tensorflowjs
 tensorflow==2.13.*
 equinox
 loguru
+tqdm
+einops
+scikit-learn
