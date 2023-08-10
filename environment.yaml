@@ -1,0 +1,9 @@
+name: amhn-website
+channels:
+  - conda-forge
+  - anaconda
+  - nvidia
+dependencies:
+  - python=3.10
+  - pip>=20.0
+  # - nb_conda # NB conda broken 23-08-09??

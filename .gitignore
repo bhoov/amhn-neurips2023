@@ -10,3 +10,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 # 256x340
 **/img/**/raw/
+*-checkpoint.ipynb
