@@ -99,6 +99,7 @@
 <style lang="css">
 	.pathLine {
 		fill: none;
+		stroke-width: 4px;
 	}
 
 	.label {

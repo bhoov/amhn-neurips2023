@@ -1,6 +1,6 @@
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;600&display=swap');
 
 $color-accent: #4CAF50;
@@ -40,9 +40,45 @@ body {
 }
 
 p {
-  line-height: 1.6rem;
+  display: block;
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 1.5rem;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
 }
 
 li {
-  margin: 0.75rem 0;
+  display: list-item;	
+  margin: 0.25rem 0;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
 }

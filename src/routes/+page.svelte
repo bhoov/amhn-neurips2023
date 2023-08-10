@@ -48,6 +48,10 @@
       {/each}
     </div>
 
+    <!-- <div style="margin:2rem;">
+      <PeopleDynamicsFromFolder configDir="models/speakers" />
+    </div> -->
+
     <div id="panelists">
       <h2>Panelists</h2>
       <p>
@@ -62,6 +66,10 @@
       </div>
     </div>
 
+    <!-- <div style="margin:2rem;">
+    <PeopleDynamicsFromFolder configDir="models/panelists" />
+    </div> -->
+
     <div id="organizers">
       <h2>Organizers</h2>
       <div class="card-container">
@@ -69,6 +77,10 @@
           <PersonCard {person} />
         {/each}
       </div>
+    </div>
+
+    <div style="margin:2rem;">
+    <PeopleDynamicsFromFolder configDir="models/organizers" />
     </div>
 
     <div id="committee">
@@ -88,8 +100,6 @@
     </div>
   </div>
 </div>
-
-<PeopleDynamicsFromFolder configDir="models/speakers"/>
 
 <style lang="scss">
   .card-container {

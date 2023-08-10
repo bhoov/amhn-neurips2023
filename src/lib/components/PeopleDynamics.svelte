@@ -138,8 +138,9 @@
 	});
 </script>
 
-<div class="grid container w-full gap-4">
-	<div class="grid w-max h-min flex-start">
+
+<div class="grid container w-full gap-4" style="display: grid; width:100%: gap:2rem;">
+	<div class="grid w-max h-min flex-start" style="display: grid; width: 100%; min-height: min-content;">
 		{#each config.people as person, i}
 			<div
 				class="person self-start bg-gray-600 text-white py-3 px-5 max-h-2xl"
@@ -161,7 +162,7 @@
 		{/each}
 	</div>
 
-	<div class="person-col w-full col-start-2 col-end-3">
+	<div class="person-col ">
 		<canvas id="img" class="w-full border-black border-2" bind:this={imgCanvas} style="" />
 		<div class="blurb my-3">
 			<p>{selectedPerson.blurb}</p>
@@ -183,7 +184,7 @@
 		</div>
 		<div class=" border-2 border-black rounded-sm p-2 my-3">
 			<h2 class="mb-2 font-medium text-md">Energy</h2>
-			<EndlessLinegraph data={energies} showVal={false} />
+			<EndlessLinegraph data={energies} showVal={false} color="#ffffff"/>
 		</div>
 		<div class="pca-landscape border-2 border-black rounded-sm p-2 my-3">
 			<h2 class="mb-2 font-medium text-md">PCA-projected dynamic state</h2>
@@ -200,19 +201,20 @@
 							selectedLabel = i;
 						}}
 					>
-						<circle cx="0" cy="0" r="5" />
+						<circle class="person-marker" cx="0" cy="0" r="5" />
 						<text
 							x={0}
 							y={0}
-							fill={i == selectedLabel ? 'blue' : '#b8bbbfaa'}
+							fill={i == selectedLabel ? 'white' : '#b8bbbfaa'}
+							font-weight={i == selectedLabel ? 'semibold' : 'medium'}
 							text-anchor="middle"
 							font-size="1.3em"
 							dy="18"
-							dominant-baseline="middle">{person.name.split(' ')[1]}</text
+							dominant-baseline="middle">{person.name.split(' ').slice(-1)}</text
 						>
 					</g>
 				{/each}
-				<circle cx={xScale(trackerLoc[0])} cy={yScale(trackerLoc[1])} r="5" fill="blue" />
+				<circle cx={xScale(trackerLoc[0])} cy={yScale(trackerLoc[1])} r="8" fill="white" stroke="white"/>
 			</svg>
 		</div>
 	</div>
@@ -220,7 +222,16 @@
 	<img src="//:0" alt="hidden" style="display:none;" bind:this={hiddenImage} />
 </div>
 
-<style lang="postcss">
+<style lang="scss">
+	.person-col {
+		width:100%;
+	}
+
+	.person-marker {
+		stroke: white;
+		fill: white;
+	}
+
 	.person {
 		flex-basis: max-content;
 	}
