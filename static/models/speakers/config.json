@@ -1,1 +1,91 @@
-{"people": [{"name": "John Hopfield", "url": "http://pni.princeton.edu/john-hopfield", "headshot": "hopfield.png", "blurb": "John Hopfield is a professor emeritus at Princeton University", "affiliations": ["Princeton University"], "proj2d": [-43.766900919061456, -37.74644824770366]}, {"name": "Dmitry Krotov", "url": "https://mitibmwatsonailab.mit.edu/people/dmitry-krotov/", "headshot": "krotov.png", "blurb": "Dmitry Krotov is a Research Scientist at IBM Research and the MIT-IBM Watson AI Lab.", "affiliations": ["IBM Research", "MIT-IBM AI Lab"], "proj2d": [-32.04805988641072, 57.54856480967044]}, {"name": "Sepp Hochreiter", "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/", "headshot": "hochreiter.png", "blurb": "Sepp Hochreiter is a leading researcher at ...", "affiliations": ["University of Lenz"], "proj2d": [-16.047206631094888, 6.194223176016472]}, {"name": "Ila Fiete", "url": "https://mcgovern.mit.edu/profile/ila-fiete/", "headshot": "fiete.png", "blurb": "???", "affiliations": ["MIT"], "proj2d": [64.41052293557254, -19.311692770512863]}, {"name": "Carlo Lucibello", "url": "https://carlolucibello.github.io/", "headshot": "lucibello.png", "blurb": "Carlo Lucibello is ...", "affiliations": ["Bocconi University"], "proj2d": [-23.582897260269007, -25.150942188155163]}, {"name": "Krzysztof Choromanski", "url": "https://www.engineering.columbia.edu/krzysztof-choromanski", "headshot": "choromanski.png", "blurb": "Krzystof Choromanski is ...", "affiliations": ["Columbia University"], "proj2d": [51.03454176126353, 18.46629522068469]}], "model_dir": "hopfield_model", "img_size": [170, 128, 3], "Nsamples": 6, "nelements": 65280}
+{
+  "people": [
+    {
+      "name": "John Hopfield",
+      "url": "http://pni.princeton.edu/john-hopfield",
+      "headshot": "hopfield.png",
+      "blurb": "John Hopfield is a professor emeritus at Princeton University",
+      "affiliations": [
+        "Princeton University"
+      ],
+      "proj2d": [
+        -43.766900919061456,
+        -37.74644824770366
+      ]
+    },
+    {
+      "name": "Dmitry Krotov",
+      "url": "https://mitibmwatsonailab.mit.edu/people/dmitry-krotov/",
+      "headshot": "krotov.png",
+      "blurb": "Dmitry Krotov is a Research Scientist at IBM Research and the MIT-IBM Watson AI Lab.",
+      "affiliations": [
+        "IBM Research",
+        "MIT-IBM AI Lab"
+      ],
+      "proj2d": [
+        -32.04805988641072,
+        57.54856480967044
+      ]
+    },
+    {
+      "name": "Sepp Hochreiter",
+      "url": "https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/",
+      "headshot": "hochreiter.png",
+      "blurb": "Sepp Hochreiter is a leading researcher at ...",
+      "affiliations": [
+        "University of Lenz"
+      ],
+      "proj2d": [
+        -16.047206631094888,
+        6.194223176016472
+      ]
+    },
+    {
+      "name": "Ila Fiete",
+      "url": "https://mcgovern.mit.edu/profile/ila-fiete/",
+      "headshot": "fiete.png",
+      "blurb": "???",
+      "affiliations": [
+        "MIT"
+      ],
+      "proj2d": [
+        64.41052293557254,
+        -19.311692770512863
+      ]
+    },
+    {
+      "name": "Carlo Lucibello",
+      "url": "https://carlolucibello.github.io/",
+      "headshot": "lucibello.png",
+      "blurb": "Carlo Lucibello is ...",
+      "affiliations": [
+        "Bocconi University"
+      ],
+      "proj2d": [
+        -23.582897260269007,
+        -25.150942188155163
+      ]
+    },
+    {
+      "name": "Krzysztof Choromanski",
+      "url": "https://www.engineering.columbia.edu/krzysztof-choromanski",
+      "headshot": "choromanski.png",
+      "blurb": "Krzystof Choromanski is ...",
+      "affiliations": [
+        "Columbia University"
+      ],
+      "proj2d": [
+        51.03454176126353,
+        18.46629522068469
+      ]
+    }
+  ],
+  "model_dir": "hopfield_model",
+  "img_size": [
+    170,
+    128,
+    3
+  ],
+  "Nsamples": 6,
+  "nelements": 65280
+}

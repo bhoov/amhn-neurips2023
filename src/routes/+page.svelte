@@ -3,6 +3,7 @@
   import AMNH_NavBar from "$lib/components/AMNH_NavBar.svelte";
   import { onMount } from "svelte";
   import PersonCard from "$lib/components/PersonCard.svelte";
+  import PeopleDynamicsFromFolder from "$lib/components/PeopleDynamicsFromFolder.svelte";
 
   export let data;
 
@@ -87,6 +88,8 @@
     </div>
   </div>
 </div>
+
+<PeopleDynamicsFromFolder configDir="models/speakers"/>
 
 <style lang="scss">
   .card-container {
