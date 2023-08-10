@@ -10,4 +10,4 @@ speakers:
 models: panelists organizers speakers
 
 deploy: models
-	pnpm run deploy
+	pnpm run build && pnpm run deploy

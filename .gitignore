@@ -12,3 +12,4 @@ vite.config.ts.timestamp-*
 **/img/**/raw/
 *-checkpoint.ipynb
 .ipynb_checkpoints
+__pycache__
