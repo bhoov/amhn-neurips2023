@@ -2,50 +2,32 @@
 <base target="_blank">
 
 
-We invite submissions on novel research results (theoretical and empirical),
-software frameworks and abstractions, benchmarks, demos, visualizations, and
-work-in-progress research. The format of submissions is **4-page papers** (
-excluding references) submitted to [OpenReview](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN). The reviews will not be shared publicly.
+We invite submissions on novel research results (theoretical and empirical), software frameworks and abstractions, benchmarks, demos, visualizations, and work-in-progress research. The format of submissions is **4-page papers** (excluding references) submitted to [OpenReview](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN). The reviews will not be shared publicly.
 
 ## Scope
 
-The research topics of interest at this workshop include (but are not limited
-to):
+Associative memory is defined as a network that can link a set of features into high-dimensional vectors, called memories. Prompted by a large enough subset of features taken from one memory, an animal or an AI network with an associative memory can retrieve the rest of the features belonging to that memory. The diverse human cognitive abilities which involve making appropriate responses to stimulus patterns can often be understood as the operation of an associative memory, with the memories often being distillations and consolidations of multiple experiences rather than merely corresponding to a single event.
 
-- Novel architectures for associative memory, Hopfield Networks, Dense
-  Associative Memories, and related models.
-- Hybrid memory augmented architectures, e.g., memory augmented Transformers and
-  RNNs, networks with fast weight updates.
-- Energy-based models and their applications.
-- Training algorithms for energy-based, or memory-based architectures.
-- The connection between associative memory and neuroscience (both insights from
-  neuroscience for better AI, and AI-inspired neurobiological work).
-- Kernel methods and associative memories.
-- Theoretical properties of associative memories with insights from statistical
-  physics, contraction analysis, control theory, etc.
+In the world of artificial neural networks, a canonical mathematical model of this phenomenon is the Hopfield network ([Hopfield, 1982](https://www.pnas.org/doi/10.1073/pnas.79.8.2554)). Although often narrowly viewed as a model that can store and retrieve predefined verbatim memories of past events, its contemporary variants make it possible to store consolidated memories turning individual experiences into useful representations of the training data. Such modern variants are often trained using the backpropagation algorithm and often benefit from superior memory storage properties ([Krotov & Hopfield, 2016](https://papers.nips.cc/paper_files/paper/2016/hash/eaae339c4d89fc102edd9dbdb6a28915-Abstract.html)). Contemporary Hopfield networks can be used as submodules in larger AI networks solving a diverse set of tasks. The goal of this workshop is to discuss the existing and emerging developments of these ideas. The research topics of interest at this workshop include (but are not limited to):
+
+- Novel architectures for associative memory, Hopfield Networks, Dense Associative Memories, and related models [[Krotov & Hopfield (2016)](https://papers.nips.cc/paper_files/paper/2016/hash/eaae339c4d89fc102edd9dbdb6a28915-Abstract.html), [Demircigil et al. (2017)](https://arxiv.org/abs/1702.01929), [Ramsauer et al. (2020)](https://arxiv.org/abs/2008.02217), [Millidge et al. (2022)](https://arxiv.org/abs/2202.04557), [Krotov (2021)](https://arxiv.org/abs/2107.06446), [Burns & Fukai (2023)](https://arxiv.org/abs/2305.05179), [Bricken & Pehlevan (2021)](https://arxiv.org/abs/2111.05498)].
+- Hybrid memory augmented architectures, e.g., memory augmented Transformers and RNNs, networks with fast weight updates [[Rae et al. (2019)](https://arxiv.org/abs/1911.05507), [Wu et al. (2022)](https://arxiv.org/abs/2203.08913), [Wang et al. (2023)](https://arxiv.org/abs/2306.07174), [Schlag et al. (2021)](http://proceedings.mlr.press/v139/schlag21a.html)].
+- Energy-based models and their applications [[Hoover et al. (2023a)](https://arxiv.org/abs/2302.07253), [Hoover et al. (2023b)](https://bhoov.com/hamux/), [Ota & Taki (2023)](https://arxiv.org/abs/2304.13061)].
+- Training algorithms for energy-based, or memory-based architectures [[Du & Mordach (2019)](https://arxiv.org/abs/1903.08689)].
+- The connection between associative memory and neuroscience, including both insights from neuroscience for better AI, and AI-inspired neurobiological work [[Krotov & Hopfield (2020)](https://arxiv.org/abs/2008.06996), [Whittington et al. (2021)](https://arxiv.org/abs/2112.04035), [Sharma et al. (2022)](https://arxiv.org/abs/2202.00159), [Tyulmankov et al. (2021)](https://arxiv.org/abs/2110.13976)].
+- Kernel methods and associative memories [[Choromanski et al. (2020)](https://arxiv.org/abs/2009.14794)].
+- Theoretical properties of associative memories with insights from statistical physics, contraction analysis, control theory, and related areas [[Lucibello & Mezard (2023)](https://arxiv.org/abs/2304.14964), [Agliari et al. (2022)](https://arxiv.org/abs/2212.00606)].
 - Multimodal architectures with associative memories.
-- Sequential Hopfield networks for temporal sequences.
-- Clustering with associative memories.
-- Energy-based Transformers.
-- Applications of associative memories and energy-based models to various data
-  domains, such as language, images, sound, graphs, temporal sequences,
-  computational chemistry and biology, etc.
+- Sequential Hopfield networks for temporal sequences [[Karuvally et al. (2022)](https://arxiv.org/abs/2212.05563), [Chaudhry et al. (2023)](https://arxiv.org/abs/2306.04532)].
+- Other machine learning tasks (such as clustering, dimensionality reduction) with associative memories [[Saha et al. (2023)](https://arxiv.org/abs/2306.03209)].
+- Energy-based Transformers [[Hoover et al. (2023a)](https://arxiv.org/abs/2302.07253)].
+- Applications of associative memories and energy-based models to various data domains, such as language, images, sound, graphs, temporal sequences, computational chemistry and biology [[Widrich et al. (2020)](https://arxiv.org/abs/2007.13505), [Liang et al. (2022)](https://www.frontiersin.org/articles/10.3389/fdata.2022.1044709/full), [Furst et al. (2022)](https://proceedings.neurips.cc/paper_files/paper/2022/hash/8078e76f913e31b8467e85b4c0f0d22b-Abstract-Conference.html), [Bricken et al. (2023)](https://arxiv.org/abs/2303.11934), [Tang & Kopp (2021)](https://arxiv.org/abs/2105.15034), [Sandler et al. (2022)](https://openaccess.thecvf.com/content/CVPR2022/html/Sandler_Fine-Tuning_Image_Transformers_Using_Learnable_Memory_CVPR_2022_paper.html), [Xu et al. (2022)](https://arxiv.org/abs/2208.04441)].
 
 ## Submission
 
-The OpenReview submission is now open: [link](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN)
+**The OpenReview submission is now open**: [link](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN)
 
 The submission deadline is: September 29 2023 23:59 AOE
 
-The format of submissions is 4-page papers (+ references) using the workshop’s
-[LaTeX template](/amhn2023_latex_template.zip "download"). Supplementary materials / appendices after the references
-are allowed and do not count towards the page limit. Submissions should be
-anonymized and should not include any identifying information about author
-identities or affiliations. There are no formal proceedings generated from this
-workshop. Accepted papers will be made public on OpenReview. The reviewing
-process will be double-blind. In assessing submitted contributions we will use
-the same rules for conflicts of interest as are used in the main track NeurIPS
-conference, e.g. reviewers cannot be from the same organization as authors,
-recent coauthors cannot review each other’s submissions. While we welcome short
-versions of published papers, preference will be given to new and not yet
-published work.
+The format of submissions is 4-page papers (+ references) using the workshop's LaTeX template [LaTeX template](/amhn2023_latex_template.zip "download"). Supplementary materials / appendices after the references are allowed and do not count towards the page limit. Submissions should be anonymized and should not include any identifying information about author identities or affiliations. There are no formal proceedings generated from this workshop. Accepted papers will be made public on OpenReview. The reviewing process will be double-blind. In assessing submitted contributions we will use the same rules for conflicts of interest as are used in the main track NeurIPS conference, e.g. reviewers cannot be from the same organization as authors, recent coauthors cannot review each other's submissions. While we welcome short versions of published papers, preference will be given to new and not yet published work.
+

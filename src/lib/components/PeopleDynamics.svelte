@@ -65,7 +65,7 @@
 	let selectedLabel = 0;
 	$: selectedPerson = config.people[selectedLabel];
 	$: label = tf.tensor(selectedLabel).cast('int32').bufferSync();
-	let alpha = tf.tensor(0.003).cast('float32').bufferSync();
+	let alpha = tf.tensor(0.002).cast('float32').bufferSync();
 	let isPlaying = true;
 
 	function play() {

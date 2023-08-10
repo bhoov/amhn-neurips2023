@@ -79,10 +79,6 @@
       </div>
     </div>
 
-    <div style="margin:2rem;">
-    <PeopleDynamicsFromFolder configDir="models/organizers" />
-    </div>
-
     <div id="committee">
       <h2>Program Commitee</h2>
       <ul>
@@ -97,6 +93,13 @@
           </li>
         {/each}
       </ul>
+    </div>
+
+    <h2>Learn Who We Are by Exploring the Hopfield Network Energy Landscape</h2>
+
+    <p>The following interactive demo shows the dynamics of a Hopfield Network.</p>
+    <div style="margin:2rem;">
+      <PeopleDynamicsFromFolder configDir="models/organizers" />
     </div>
   </div>
 </div>
