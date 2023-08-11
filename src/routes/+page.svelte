@@ -95,12 +95,12 @@
       </ul>
     </div>
 
-    <h2>Learn Who We Are by Exploring the Hopfield Network Energy Landscape</h2>
+    <!-- <h2>Learn Who We Are by Exploring the Hopfield Network Energy Landscape</h2>
 
     <p>The following interactive demo shows the dynamics of a Hopfield Network.</p>
     <div style="margin:2rem;">
       <PeopleDynamicsFromFolder configDir="models/organizers" />
-    </div>
+    </div> -->
   </div>
 </div>
 
