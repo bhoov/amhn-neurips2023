@@ -164,9 +164,9 @@
 </script>
 
 <div class="big-container">
-	<div class="text-sm italic mb-2">Select a label</div>
 	<div class="small-select mb-4">
-		<select name="person-selector" id="" bind:value={selectedLabel}>
+		<div class="text-sm italic mb-2">Select a label</div>
+		<select name="person-selector" class="mb-2" id="" bind:value={selectedLabel}>
 			{#each config.people as person, i}
 				<option value={i}>
 					<div>
@@ -177,6 +177,7 @@
 		</select>
 	</div>
 	<div class="people-list">
+		<div class="text-sm italic mb-2">Select a label</div>
 		{#each config.people as person, i}
 			<div
 				class="person"
@@ -355,6 +356,10 @@
 
 		.small-select {
 			display: inline;
+		}
+
+		select {
+			color: black;
 		}
 	}
 </style>
