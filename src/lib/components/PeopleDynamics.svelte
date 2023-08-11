@@ -8,6 +8,7 @@
 	import * as R from "ramda";
 	import * as d3 from "d3";
 	import EndlessLinegraph from "./EndlessLinegraph.svelte";
+	// import Select from "svelte-select";
 
 	interface PersonI {
 		name: string;
@@ -71,7 +72,7 @@
 	let selectedLabel = 0;
 	$: selectedPerson = config.people[selectedLabel];
 	$: label = tf.tensor(selectedLabel).cast("int32").bufferSync();
-	let alpha = tf.tensor(0.002).cast("float32").bufferSync();
+	let alpha = tf.tensor(0.0013).cast("float32").bufferSync();
 	let isPlaying = true;
 
 	function play() {
@@ -162,12 +163,23 @@
 	});
 </script>
 
-<div class="grid grid-cols-12 grid-rows-6 gap-4" style="place-content: center;">
-	<div class="people-list col-start-1 col-end-4 row-start-1 row-end-7">
+<div class="big-container">
+	<div class="text-sm italic mb-2">Select a label</div>
+	<div class="small-select mb-4">
+		<select name="person-selector" id="" bind:value={selectedLabel}>
+			{#each config.people as person, i}
+				<option value={i}>
+					<div>
+						{person.name}
+					</div>
+				</option>
+			{/each}
+		</select>
+	</div>
+	<div class="people-list">
 		{#each config.people as person, i}
 			<div
-				class="person self-start bg-gray-600 text-white py-3 px-5 max-h-2xl shadow-inner"
-				style="line-height: 1rem;"
+				class="person"
 				class:active={selectedLabel == i}
 				on:click={() => {
 					selectedLabel = i;
@@ -185,29 +197,27 @@
 			</div>
 		{/each}
 	</div>
-	<div class="person-headshot col-start-4 col-end-7 row-start-1 row-end-3">
-		<div style="width:200px">
-			<canvas
-				id="img"
-				class="w-full border-black border-2"
-				bind:this={imgCanvas}
-				style=""
+	<div class="person-headshot mt-4">
+		<div class="text-sm italic mb-2">Watch dynamics evolve</div>
+		<canvas
+			id="img"
+			class="w-full border-black border-2"
+			bind:this={imgCanvas}
+			style=""
+		/>
+	</div>
+	<div class="energy-linegraph">
+		<h3 class="text-md">Energy</h3>
+		<div style="height:100%;">
+			<EndlessLinegraph
+				data={energies}
+				showVal={false}
+				height={400}
+				color="#ffffff"
 			/>
 		</div>
 	</div>
-	<div
-		class="energy-linegraph border-2 border-black rounded-sm p-2 row-start-1 row-end-3 col-start-7 col-end-13"
-		style="height:100%;"
-	>
-		<h3 class="font-medium text-md">Energy</h3>
-		<div style="height:100%;">
-			<EndlessLinegraph data={energies} showVal={false} height={400} color="#ffffff" />
-		</div>
-	</div>
-	<div
-		class="pca-container col-start-4 col-end-13 row-start-3 row-end-7"
-		style="width:100%;"
-	>
+	<div class="pca-container" style="width:100%;">
 		<div class="pca-landscape border-2 border-black rounded-sm p-2">
 			<h3 class="mb-2 font-medium text-md">
 				PCA-projected dynamic state on energy landscape
@@ -278,10 +288,6 @@
 		flex-basis: max-content;
 	}
 
-	.active {
-		@apply bg-white text-gray-500;
-	}
-
 	.pca-landscape {
 	}
 
@@ -295,5 +301,60 @@
 
 	.clicked {
 		@apply bg-gray-400 text-gray-200;
+	}
+
+	.big-container {
+		@apply grid grid-cols-12 grid-rows-6 gap-4;
+		place-content: center;
+	}
+
+	.people-list {
+		@apply col-start-1 col-end-4 row-start-1 row-end-7;
+	}
+
+	.person {
+		@apply self-start bg-gray-600 text-white py-3 px-5 shadow-inner;
+		line-height: 1rem;
+	}
+
+	.person-headshot {
+		@apply col-start-4 col-end-7 row-start-1 row-end-3;
+		width: 200px;
+	}
+
+	.energy-linegraph {
+		@apply border-2 border-black rounded-sm p-2 row-start-1 row-end-3 col-start-7 col-end-13;
+		height: 100%;
+	}
+
+	.pca-container {
+		@apply col-start-4 col-end-13 row-start-3 row-end-7;
+	}
+
+	.active {
+		@apply bg-white text-gray-500;
+	}
+
+	.clickable {
+		cursor: pointer;
+	}
+
+	.small-select {
+		display: none;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.big-container {
+			display: block;
+			width: 90vw;
+		}
+
+		.people-list {
+			display: none;
+		}
+
+		.small-select {
+			display: inline;
+		}
 	}
 </style>

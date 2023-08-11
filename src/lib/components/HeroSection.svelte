@@ -38,4 +38,11 @@
     transform: translate(-50%, -50%);
     color: inherit;
   }
+
+	@media only screen and (max-width: 768px) {
+    .hero-image {
+      height: 90%;
+    }
+
+	}
 </style>
