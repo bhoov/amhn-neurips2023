@@ -87,8 +87,8 @@
       </ul>
     </div>
   </div>
-  <div class="content" id="exploring-hopfield">
-    <h2>Exploring Hopfield Networks</h2>
+  <div class="content">
+    <h2 id="exploring-hopfield">Exploring Hopfield Networks</h2>
 
     <p>
       <a href="http://www.scholarpedia.org/article/Hopfield_network"

@@ -197,7 +197,7 @@
 			</div>
 		{/each}
 	</div>
-	<div class="person-headshot mt-4">
+	<div class="person-headshot">
 		<div class="text-sm italic mb-2">Watch dynamics evolve</div>
 		<canvas
 			id="img"
