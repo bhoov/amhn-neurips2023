@@ -29,6 +29,8 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-bottom: 80px;
   margin: 40px 1.5rem;
@@ -36,6 +38,11 @@ body {
 
 .content {
   max-width: 768px;
+  width: 100%;
+}
+
+.content-wide {
+  max-width: 940px;
   width: 100%;
 }
 
@@ -61,6 +68,16 @@ ul {
 li {
   display: list-item;	
   margin: 0.25rem 0;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
 }
 
 h1 {
