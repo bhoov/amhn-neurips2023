@@ -16,8 +16,8 @@
      style:top={navBarTop+'px'}>
     <NavBar logoName="AMHN" navItems={[
             {label: "Call", href: "/cfp/"},
-            {label: "Related Papers", href: "/papers/"}
-            // {label: "Organizers", href: "/#organizers"},
+            {label: "Related Papers", href: "/papers/"},
+            {label: "Demo", href: "/#exploring-hopfield"},
             // {label: "Speakers", href: "/#speakers"},
             // {label: "Panelists", href: "/#panelists"},
     ]}/>

@@ -65,7 +65,7 @@
 </script>
 
 <div>
-	<svg viewBox={`0 0 ${width} ${height}`} width="100%" preserveAspectRatio=none>
+	<svg viewBox={`0 0 ${width} ${height}`} width="100%" height="100%" preserveAspectRatio=none>
 		<g class="line-plot">
 			<path d={lineGenerator(filtered)} class="pathLine" style:stroke={color} />
 		</g>

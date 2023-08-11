@@ -48,10 +48,6 @@
       {/each}
     </div>
 
-    <!-- <div style="margin:2rem;">
-      <PeopleDynamicsFromFolder configDir="models/speakers" />
-    </div> -->
-
     <div id="panelists">
       <h2>Panelists</h2>
       <p>
@@ -65,10 +61,6 @@
         {/each}
       </div>
     </div>
-
-    <!-- <div style="margin:2rem;">
-    <PeopleDynamicsFromFolder configDir="models/panelists" />
-    </div> -->
 
     <div id="organizers">
       <h2>Organizers</h2>
@@ -95,7 +87,7 @@
       </ul>
     </div>
   </div>
-  <div class="content">
+  <div class="content" id="exploring-hopfield">
     <h2>Exploring Hopfield Networks</h2>
 
     <p>
@@ -156,12 +148,10 @@
   </div>
   <div class="content-wide" />
   <div style="margin:2rem;">
-    <PeopleDynamicsFromFolder configDir="models/organizers" />
+    <PeopleDynamicsFromFolder configDir="models/allpeople" />
   </div>
 </div>
 
-<!-- <div>
-  </div> -->
 
 <style lang="scss">
   .card-container {

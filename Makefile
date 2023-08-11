@@ -1,3 +1,6 @@
+all-models:
+	python train_hopfield_people.py _data/speakers.yaml _data/panelists.yaml _data/organizers.yaml static/models/allpeople
+
 panelists:
 	python train_hopfield_people.py _data/panelists.yaml static/models/panelists
 
@@ -7,7 +10,5 @@ organizers:
 speakers:
 	python train_hopfield_people.py _data/speakers.yaml static/models/speakers
 
-models: panelists organizers speakers
-
-deploy: models
+deploy: all-models
 	pnpm run build && pnpm run deploy

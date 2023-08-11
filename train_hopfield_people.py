@@ -8,7 +8,7 @@ import argparse
 from typing import *
 
 parser = argparse.ArgumentParser()
-parser.add_argument("people_yaml", type=str, help="yaml file containing description of people")
+parser.add_argument("people_yamls", type=str, nargs='+', help="yaml file(s) containing description of people")
 parser.add_argument("output_dir", type=str, help="Where to save all configuration for the frontend project")
 parser.add_argument("--headshot_resolution_dir", type=str, default="static/img/headshots/128x170", help="Where to look for headshots")
 parser.add_argument("--label_strength", type=float, default=20_000, help="How much more strongly to weight labels than pixels in the similarity functions")
@@ -48,8 +48,12 @@ output_dir = Path(args.output_dir)
 output_dir.mkdir(exist_ok=True, parents=True)
 
 logger.info("Loading yaml file")
-with open(args.people_yaml, "r") as fp:
-    people = yaml.safe_load(fp)
+people = []
+
+for f in args.people_yamls:
+    with open(f, "r") as fp:
+        fpeople = yaml.safe_load(fp)
+    people += fpeople
   
 headshots = [Image.open(os.path.join(args.headshot_resolution_dir, person["headshot"])).convert('RGB') for person in people]
 assert all(h.size == headshots[0].size for h in headshots)
