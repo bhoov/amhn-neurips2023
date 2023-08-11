@@ -50,7 +50,7 @@
   });
 </script>
 
-<AMNH_NavBar paralax={false} />
+<!-- <AMNH_NavBar paralax={false} /> -->
 
 <div class="contentWrap">
   <div class="content">

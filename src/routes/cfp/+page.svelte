@@ -3,19 +3,15 @@
 
   import SvelteMarkdown from "svelte-markdown";
 
-  export let data
+  export let data;
 
   let source = data.call_for_papers;
 </script>
 
-<div>
-  <AMNH_NavBar paralax={false} />
-
-  <div class="contentWrap">
-    <div class="cfp content">
-      <h1>Call for Papers</h1>
-      <SvelteMarkdown {source} />
-    </div>
+<div class="contentWrap">
+  <div class="cfp content">
+    <h1>Call for Papers</h1>
+    <SvelteMarkdown {source} />
   </div>
 </div>
 

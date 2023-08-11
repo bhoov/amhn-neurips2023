@@ -12,9 +12,8 @@
   });
 </script>
 
-<AMNH_NavBar />
+<!-- <AMNH_NavBar /> -->
 <HeroSection />
-
 <div class="contentWrap">
   <div class="content">
     <h2>Workshop</h2>
@@ -143,15 +142,16 @@
         >(it so happens that the energy gradient is zero when the dynamic state
         equals the original headshot)</span
       >.
+      <em
+        >A more technical description of the math behind the demo coming soon.</em
+      >
     </p>
-
   </div>
   <div class="content-wide" />
   <div style="margin:2rem;">
     <PeopleDynamicsFromFolder configDir="models/allpeople" />
   </div>
 </div>
-
 
 <style lang="scss">
   .card-container {
