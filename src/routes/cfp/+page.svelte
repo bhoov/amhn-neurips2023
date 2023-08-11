@@ -22,7 +22,7 @@
 <style lang="scss">
   .cfp {
     :global(a) {
-      color: inherit;
+      color: #999999;
     }
   }
 </style>
