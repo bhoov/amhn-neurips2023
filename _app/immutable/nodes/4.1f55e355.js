@@ -21986,7 +21986,7 @@ return a / b;`,OX=`
       `),w=Ae("span"),x=Le('(perform "inference")'),N=Le(`
       by explicitly descending the energy
       `),I=Ae("span"),C=Le("(following the negative gradient of the energy)"),S=Le(`. This inference process is a dynamical system that is guaranteed to
-      converge to the fixed points `),T=Ae("span"),E=Le('("memories")'),R=Le("."),P=Nt(),L=Ae("p"),z=Le(`In the exploratory spirit of this workshop, we have built an Hopfield
+      converge to the fixed points `),T=Ae("span"),E=Le('("memories")'),R=Le("."),P=Nt(),L=Ae("p"),z=Le(`In the exploratory spirit of this workshop, we have built a Hopfield
       Network demo that runs live in your web browser. The data stored in the
       network are the headshots of each person mentioned on the `),M=Ae("a"),V=Le("landing page"),j=Le(". The animation below has two states:"),W=Nt(),G=Ae("ol"),K=Ae("li"),Y=Le("the selected person "),Z=Ae("span"),ee=Le('(the "label")'),se=Nt(),te=Ae("li"),ae=Le("the currently displayed image "),de=Ae("span"),ve=Le('(the "dynamic state")'),ye=Nt(),fe=Ae("p"),Ce=Le(`At every step, we display the recent history of energy values as a
       lineplot alongside a 2-D PCA projection of the current dynamic state `),ke=Ae("span"),Fe=Le("(image)"),Ee=Le(`. Watch as the dynamic state moves around the energy landscape
@@ -22007,7 +22007,7 @@ return a / b;`,OX=`
       `),w=Re(dn,"SPAN",{class:!0});var ly=Ie(w);x=Pe(ly,'(perform "inference")'),ly.forEach(pe),N=Pe(dn,`
       by explicitly descending the energy
       `),I=Re(dn,"SPAN",{class:!0});var cy=Ie(I);C=Pe(cy,"(following the negative gradient of the energy)"),cy.forEach(pe),S=Pe(dn,`. This inference process is a dynamical system that is guaranteed to
-      converge to the fixed points `),T=Re(dn,"SPAN",{class:!0});var uy=Ie(T);E=Pe(uy,'("memories")'),uy.forEach(pe),R=Pe(dn,"."),dn.forEach(pe),P=It(wn),L=Re(wn,"P",{});var Ol=Ie(L);z=Pe(Ol,`In the exploratory spirit of this workshop, we have built an Hopfield
+      converge to the fixed points `),T=Re(dn,"SPAN",{class:!0});var uy=Ie(T);E=Pe(uy,'("memories")'),uy.forEach(pe),R=Pe(dn,"."),dn.forEach(pe),P=It(wn),L=Re(wn,"P",{});var Ol=Ie(L);z=Pe(Ol,`In the exploratory spirit of this workshop, we have built a Hopfield
       Network demo that runs live in your web browser. The data stored in the
       network are the headshots of each person mentioned on the `),M=Re(Ol,"A",{href:!0});var hy=Ie(M);V=Pe(hy,"landing page"),hy.forEach(pe),j=Pe(Ol,". The animation below has two states:"),Ol.forEach(pe),W=It(wn),G=Re(wn,"OL",{});var Fl=Ie(G);K=Re(Fl,"LI",{});var Hh=Ie(K);Y=Pe(Hh,"the selected person "),Z=Re(Hh,"SPAN",{class:!0});var dy=Ie(Z);ee=Pe(dy,'(the "label")'),dy.forEach(pe),Hh.forEach(pe),se=It(Fl),te=Re(Fl,"LI",{});var jh=Ie(te);ae=Pe(jh,"the currently displayed image "),de=Re(jh,"SPAN",{class:!0});var py=Ie(de);ve=Pe(py,'(the "dynamic state")'),py.forEach(pe),jh.forEach(pe),Fl.forEach(pe),ye=It(wn),fe=Re(wn,"P",{});var Ll=Ie(fe);Ce=Pe(Ll,`At every step, we display the recent history of energy values as a
       lineplot alongside a 2-D PCA projection of the current dynamic state `),ke=Re(Ll,"SPAN",{class:!0});var fy=Ie(ke);Fe=Pe(fy,"(image)"),fy.forEach(pe),Ee=Pe(Ll,`. Watch as the dynamic state moves around the energy landscape
