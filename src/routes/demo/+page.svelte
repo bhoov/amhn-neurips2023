@@ -27,7 +27,7 @@
     </p>
 
     <p>
-      In the exploratory spirit of this workshop, we have built an Hopfield
+      In the exploratory spirit of this workshop, we have built a Hopfield
       Network demo that runs live in your web browser. The data stored in the
       network are the headshots of each person mentioned on the <a href="/"
         >landing page</a
