@@ -32,6 +32,24 @@
 	export let svgHeight = 400;
 	export let svgPadding = 0.1; // Frac padding (relative to pixels) on each side
 	export let lineGraphLen = 500;
+	export let pauseWhenNotOnScreen = false;
+
+	let container: HTMLDivElement;
+	let scrollY: number = 0;
+	let innerHeight: number = 0;
+	$: scrollBottom = scrollY + innerHeight;
+
+	$: {
+		if (container != null && pauseWhenNotOnScreen) {
+			// console.log("bottom", scrollBottom);
+			// console.log("el", container.offsetTop);
+			if (scrollBottom > container.offsetTop + (4110 - 3807)) {
+				play();
+			} else {
+				stop();
+			}
+		}
+	}
 
 	$: minX = config.people.reduce((acc, x) => R.min(acc, x.proj2d[0]), Infinity);
 	$: maxX = config.people.reduce(
@@ -73,17 +91,23 @@
 	$: selectedPerson = config.people[selectedLabel];
 	$: label = tf.tensor(selectedLabel).cast("int32").bufferSync();
 	let alpha = tf.tensor(0.0013).cast("float32").bufferSync();
-	let isPlaying = true;
+	let isPlaying = false;
 
 	function play() {
-		repeater && repeater.startRepeater();
-		isPlaying = true;
+		if (!isPlaying) {
+			console.log("playing");
+			repeater && repeater.startRepeater();
+			isPlaying = true;
+		}
 	}
 
 	function stop() {
-		repeater && repeater.killHandle();
-		isPlaying = false;
-		manualLoadImage();
+		if (isPlaying) {
+			console.log("stopping");
+			repeater && repeater.killHandle();
+			isPlaying = false;
+			manualLoadImage();
+		}
 	}
 
 	let trackerLoc = [0, 0];
@@ -163,10 +187,15 @@
 	});
 </script>
 
-<div class="big-container">
+<div class="big-container" bind:this={container}>
 	<div class="small-select mb-4">
 		<div class="text-sm italic mb-2">Select a label</div>
-		<select name="person-selector" class="mb-2" id="" bind:value={selectedLabel}>
+		<select
+			name="person-selector"
+			class="mb-2"
+			id=""
+			bind:value={selectedLabel}
+		>
 			{#each config.people as person, i}
 				<option value={i}>
 					<div>
@@ -274,6 +303,8 @@
 				class:clicked={!isPlaying}>⏹️ Stop</button
 			> -->
 <img src="//:0" alt="hidden" style="display:none;" bind:this={hiddenImage} />
+
+<svelte:window bind:scrollY bind:innerHeight />
 
 <style lang="scss">
 	.person-col {

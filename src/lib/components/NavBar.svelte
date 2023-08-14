@@ -157,6 +157,7 @@
     .navbar-list li {
         list-style-type: none;
         position: relative;
+        font-size: xx-large;
     }
 
     .navbar-list li:hover {
