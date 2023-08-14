@@ -11,7 +11,7 @@
     <footer class="content-wide my-8">
         <hr class="bg-gray-800" />
         <p class="text-sm text-gray-400 my-8 px-6" style="text-align: center;">
-            Website and <a href="/#exploring-hopfield">demo</a> built by <a
+            Website and <a href="/demo">demo</a> built by <a
                 href="http://hendrik.strobelt.com/"
                 target="_blank">Hendrik Strobelt</a
             >
