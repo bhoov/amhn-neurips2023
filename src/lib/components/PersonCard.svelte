@@ -25,7 +25,7 @@
     <div style="width: 100%; display: flex; flex-direction: column; align-items: start;margin-top: .5em;">
 
         <div style="text-align: center;">{person.name}</div>
-        <div style="font-size: small;margin-top:0.2rem;color:gray">{@html affiliation}</div>
+        <div style="font-size: 13px;margin-top:0.2rem;color:gray">{@html affiliation}</div>
     </div>
 </a>
 
@@ -43,11 +43,11 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    width: 200px;
+    width: 210px;
 
     .portrait {
       max-width: 150px;
-      max-height: 150px;
+      max-height: 200px;
       border-radius: 50%;
       filter: grayscale(100%)
     }
