@@ -5,8 +5,9 @@
   let wHeight;
 
   export let paralax = true
+  const paralax_height = 45
 
-  $:navBarTop = paralax ? -Math.min(scroll / (.7 * wHeight) * 30, 30) : -Math.min(scroll, 30)
+  $:navBarTop = paralax ? -Math.min(scroll / (.7 * wHeight) * paralax_height, paralax_height) : -Math.min(scroll, paralax_height)
 
 </script>
 

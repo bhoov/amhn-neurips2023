@@ -158,7 +158,7 @@
     .navbar-list li {
         list-style-type: none;
         position: relative;
-        font-size: xx-large;
+
     }
 
     .navbar-list li:hover {
@@ -183,7 +183,7 @@
         height: 45px;
         align-items: center;
         padding: 0 10px;
-        font-size: 13px;
+        font-size: 20px;
     }
 
     @media only screen and (min-width: 767px) {
