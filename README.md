@@ -33,7 +33,8 @@ The global database is exposed to every route on the website through `export let
 ### Deploying
 
 ```
-make deploy # Manually, `npm run build && npm run deploy``
+make deploy-site
+# make deploy # If you want to rebuild the demo
 ```
 
 GitHub has been setup to deploy automatically:
