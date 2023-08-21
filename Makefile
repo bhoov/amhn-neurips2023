@@ -13,5 +13,5 @@ speakers:
 deploy-site:
 	pnpm run build && pnpm run deploy
 
-deploy: all-models
+deploy-all: all-models
 	pnpm run build && pnpm run deploy
