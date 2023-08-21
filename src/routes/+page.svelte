@@ -81,7 +81,8 @@
       </div>
     </div>
 
-    <h2 id="contact">Contact Us</h2>
+    <div id="contact"></div>
+    <h2>Contact Us</h2>
 
     <p>
       Questions? Email us at <a href="mailto:amhn2023@gmail.com"
