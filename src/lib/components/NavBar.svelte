@@ -142,6 +142,7 @@
         justify-content: flex-end;
         margin: 0;
         padding: 0 40px;
+        // font-size: 8rem;
     }
 
     .navbar-list.mobile {

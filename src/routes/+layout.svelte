@@ -5,17 +5,14 @@
 </script>
 
 <svelte:head>
+    <meta name="description" content="Associative Memory &amp; Hopfield Network Worshop @NeurIPS 2023. Discuss the latest multidisciplinary developments in Associative Memory and Hopfield Networks. Imagine new tools built around memory as computation.">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="https://amhn.vizhub.ai" />
     <meta name="twitter:title" content="AMHN Workshop @NeurIPS 2023" />
     <meta
         name="twitter:description"
         content="Associative Memory &amp; Hopfield Network Worshop @NeurIPS 2023. Discuss the latest multidisciplinary developments in Associative Memory and Hopfield Networks. Imagine new tools built around memory as computation."
     />
-    <meta
-        name="twitter:image"
-        content="https://amhn.vizhub.ai/img/amhn_card_preview.jpg"
-    />
+    <meta name="twitter:image" content="https://amhn.vizhub.ai/img/amhn_card_preview.jpg">
 </svelte:head>
 
 <AMNH_NavBar />
