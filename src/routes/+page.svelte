@@ -26,9 +26,9 @@
     </p>
 
     <p>
-      See our <a href="/demo">Demo</a> for a brief introduction to Hopfield Networks and
-      Associative Memory, where we deploy an interactive Hopfield Network that runs
-      in your web-browser.
+      See our <a href="/demo">Demo</a> for a brief introduction to Hopfield Networks
+      and Associative Memory, where we deploy an interactive Hopfield Network that
+      runs in your web-browser.
     </p>
 
     <div id="participation" />
@@ -37,6 +37,12 @@
       Please see the <a href="/cfp" style="color:inherit;">Call for Papers</a>
       and
       <a href="/papers" style="color:inherit;">Related Work</a> pages.
+    </p>
+
+    <p>
+      Questions? Email the organizers at <a href="mailto:amhn2023@gmail.com"
+        >amhn2023@gmail.com</a
+      >.
     </p>
 
     <div id="speakers" />
@@ -75,16 +81,28 @@
       </div>
     </div>
 
+    <h2 id="contact">Contact Us</h2>
+
+    <p>
+      Questions? Email us at <a href="mailto:amhn2023@gmail.com"
+        >amhn2023@gmail.com</a
+      >.
+    </p>
+
     <div id="committee">
       <h2>Program Commitee</h2>
       <ul>
         {#each data.committee as person}
           <li>
-            <a
-              href={person.url || "#"}
-              target="_blank"
-              style="text-decoration:none; color:inherit;">{person.name}</a
-            >
+            {#if person.url != null}
+              <a
+                href={person.url}
+                target="_blank"
+                style="text-decoration:none; color:inherit;">{person.name}</a
+              >
+            {:else}
+              {person.name}
+            {/if}
             ({person.affiliations.join(", ")})
           </li>
         {/each}
