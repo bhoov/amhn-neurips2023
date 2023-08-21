@@ -14,7 +14,7 @@
     />
     <meta
         name="twitter:image"
-        content="/img/amhn_card_preview.jpg"
+        content="https://amhn.vizhub.ai/img/amhn_card_preview.jpg"
     />
 </svelte:head>
 
