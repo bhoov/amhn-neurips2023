@@ -2,6 +2,8 @@
 
 > Website code for [Associative Memory and Hopfield Networks Workshop at NeurIPS 2023](amhn.vizhub.aii). Built on [SvelteKit](https://kit.svelte.dev/) and served as a static site.
 
+You do not need the backend `conda` environment if you are only working on the frontend.
+
 ```
 conda env create -f environment.yml
 conda activate amhn-website
@@ -33,7 +35,7 @@ The global database is exposed to every route on the website through `export let
 ### Deploying
 
 ```
-make deploy-site
+make deploy-site # Or manually `npm run build && npm run deploy`
 # make deploy # If you want to rebuild the demo
 ```
 
