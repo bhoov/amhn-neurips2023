@@ -61,7 +61,7 @@
         equals the original headshot)</span
       >.
       <em
-        >A technical description of the math behind the demo coming soon.</em
+        >A technical description of the math behind the demo is coming soon.</em
       >
     </p>
   </div>
