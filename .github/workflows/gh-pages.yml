@@ -31,4 +31,6 @@ jobs:
           cache: 'npm'
       - run: npm i
       - run: npm run build
-      - run: npm run deploy
+      - run: npm run deploy-actions
+        env: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
