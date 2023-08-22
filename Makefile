@@ -11,7 +11,7 @@ speakers:
 	python train_hopfield_people.py _data/speakers.yaml static/models/speakers
 
 deploy-site:
-	pnpm run build && pnpm run deploy
+	npm run build && npm run deploy
 
 deploy-all: all-models
-	pnpm run build && pnpm run deploy
+	npm run build && npm run deploy
