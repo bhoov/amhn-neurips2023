@@ -7,7 +7,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"deploy": "touch build/.nojekyll && gh-pages -d build -t true",
-		"deploy-actions": "touch build/.nojekyll && gh-pages -d build -t true -r https://bhoov:${GITHUB_TOKEN}@github.com/bhoov/amhn-neurips2023",
+		"deploy-actions": "touch build/.nojekyll && gh-pages -d build -t true -r https://bhoov:${GITHUB_TOKEN}@github.com/bhoov/amhn-neurips2023 -u 'Ben Hoover <benhoover34@gmail.com>'",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
