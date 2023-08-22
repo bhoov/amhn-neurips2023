@@ -61,7 +61,7 @@
         equals the original headshot)</span
       >.
       <em
-        >A more technical description of the math behind the demo coming soon.</em
+        >A technical description of the math behind the demo coming soon.</em
       >
     </p>
   </div>
@@ -69,8 +69,5 @@
   <div style="margin:2rem;">
     <PeopleDynamicsFromFolder configDir="/models/allpeople" />
   </div>
-
-  <h2 id="description">Math</h2>
-
 
 </div>
