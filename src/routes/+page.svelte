@@ -125,8 +125,4 @@
   h2 {
     margin: 2.5rem 0 1.5rem 0;
   }
-
-  .aside {
-    color: #888888;
-  }
 </style>

@@ -34,6 +34,10 @@ The global database is exposed to every route on the website through `export let
 
 ### Deploying
 
+> **UPDATE 08/22/2023**: Any merge to the `deploy` branch is automatically deployed to the website. This process takes ~3min. This change required a switch to `npm` over `pnpm`.
+
+**Manually**
+
 ```
 make deploy-site # Or manually `npm run build && npm run deploy`
 # make deploy # If you want to rebuild the demo
