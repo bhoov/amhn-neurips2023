@@ -224,7 +224,9 @@
         >(it so happens that the energy gradient is zero when the dynamic state
         equals the original headshot)</span
       >.
-      <em>A technical description of the math behind the demo coming soon.</em>
+      <em
+        >A technical description of the math behind the demo is coming soon.</em
+      >
     </p>
   </div>
   <div style="margin:2rem;">
