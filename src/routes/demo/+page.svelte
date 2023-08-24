@@ -99,23 +99,28 @@
       </p>
 
       <p>
-        In Associative Memories, each of these variables has both a
+        In Associative Memories, each of these variables has both an
         <em>internal state</em>
         that evolves in time and an <em>axonal state</em>
         <span class="aside">(an isomorphic function of the internal state)</span
         >
         that influences how the rest of the network evolves. This terminology of
         internal/axonal is inspired by biology, where the "internal" state is analogous
-        to the internal current of a neuron and the "axonal" state is analagous to
-        a neuron's <em>firing rate</em>
-        <span class="aside">(a neuron's axonal output)</span>. We denote the
-        internal state of a variable with a hat: (i.e., variable {@html math(
-          String.raw`x`
-        )} has internal state {@html math(String.raw`\hat{x}`)}, {@html math(
-          String.raw`y`
-        )} has internal state {@html math(String.raw`\hat{y}`)}, and {@html math(
-          String.raw`z`
-        )} has internal state {@html math(String.raw`\hat{z}`)}).
+        to the internal current of a neuron
+        <span class="aside"
+          >(other neurons don't see the inside of other neurons)</span
+        >
+        and the "axonal" state is analagous to a neuron's <em>firing rate</em>
+        <span class="aside"
+          >(a neuron's axonal output is how it signals to other neurons)</span
+        >. We denote the internal state of a variable with a hat: (i.e.,
+        variable {@html math(String.raw`x`)} has internal state {@html math(
+          String.raw`\hat{x}`
+        )}, {@html math(String.raw`y`)} has internal state {@html math(
+          String.raw`\hat{y}`
+        )}, and {@html math(String.raw`z`)} has internal state {@html math(
+          String.raw`\hat{z}`
+        )}).
       </p>
 
       <blockquote>
@@ -124,9 +129,15 @@
       </blockquote>
 
       <p>
-        We call the axonal state the <em>activations</em> and they are uniquely defined
-        by our choice of a scalar and convex Lagrangian function on that variable <span class="aside">(see <a href="https://arxiv.org/abs/2107.06446">Krotov (2021)</a>, <a href="https://arxiv.org/abs/2008.06996">Krotov & Hopfield (2021)</a>, and <a href="https://bhoov.com/hamux/">Hoover et al. (2022)</a> for more details)</span>.
-        Specifically, in this demo we choose
+        We call the axonal state the <em>activations</em> and they are uniquely
+        defined by our choice of a scalar and convex Lagrangian function on that
+        variable
+        <span class="aside"
+          >(see <a href="https://arxiv.org/abs/2107.06446">Krotov (2021)</a>,
+          <a href="https://arxiv.org/abs/2008.06996">Krotov & Hopfield (2021)</a
+          >, and <a href="https://bhoov.com/hamux/">Hoover et al. (2022)</a> for
+          more details)</span
+        >. Specifically, in this demo we choose
       </p>
 
       <p>
@@ -172,8 +183,9 @@
       </blockquote>
 
       <p>
-        Here, {@html math(String.raw`\beta > 0`)} is an inverse temperature that
-        controls the "spikiness" of the energy function around each memory
+        In the above equations, {@html math(String.raw`\beta > 0`)} is an inverse
+        temperature that controls the "spikiness" of the energy function around each
+        memory
         <span class="aside"
           >(the spikier the energy landscape, the more memories can be stored)</span
         >. Each of these three variables is dynamic
@@ -197,7 +209,7 @@
         <span class="aside">(look like real data)</span>
         and HIGH everywhere else
         <span class="aside"
-          >(so that our energy function places real data at local energy minima)</span
+          >(thus, our energy function places real-looking data at local energy minima)</span
         >. In this demo we choose an energy function that allows us to manually
         insert <em>memories</em>
         <span class="aside"
