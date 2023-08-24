@@ -100,21 +100,32 @@
 
       <p>
         In Associative Memories, each of these variables has both a
-        <em>hidden state</em>
-        that evolves in time and a <em>visible state</em>
-        <span class="aside">(an isomorphic function of the hidden state)</span>
-        that influences how the rest of the network evolves. We denote the hidden
-        state of a variable with a hat:
-        <span class="aside">
-          (i.e., variable {@html math(String.raw`x`)} has hidden state {@html math(
-            String.raw`\hat{x}`
-          )}, {@html math(String.raw`y`)} has hidden state {@html math(
-            String.raw`\hat{y}`
-          )}, and {@html math(String.raw`z`)} has hidden state {@html math(
-            String.raw`\hat{z}`
-          )})
-        </span>. We call the visible state the <em>activations</em> and they are
-        uniquely defined by our choice of a scalar Lagrangian function on that variable.
+        <em>internal state</em>
+        that evolves in time and an <em>axonal state</em>
+        <span class="aside">(an isomorphic function of the internal state)</span
+        >
+        that influences how the rest of the network evolves. This terminology of
+        internal/axonal is inspired by biology, where the "internal" state is analogous
+        to the internal current of a neuron and the "axonal" state is analagous to
+        a neuron's <em>firing rate</em>
+        <span class="aside">(a neuron's axonal output)</span>. We denote the
+        internal state of a variable with a hat: (i.e., variable {@html math(
+          String.raw`x`
+        )} has internal state {@html math(String.raw`\hat{x}`)}, {@html math(
+          String.raw`y`
+        )} has internal state {@html math(String.raw`\hat{y}`)}, and {@html math(
+          String.raw`z`
+        )} has internal state {@html math(String.raw`\hat{z}`)}).
+      </p>
+
+      <blockquote>
+        Dynamic variables in Associative Memories have two states: an internal
+        state and an axonal state.
+      </blockquote>
+
+      <p>
+        We call the axonal state the <em>activations</em> and they are uniquely defined
+        by our choice of a scalar and convex Lagrangian function on that variable <span class="aside">(see <a href="https://arxiv.org/abs/2107.06446">Krotov (2021)</a>, <a href="https://arxiv.org/abs/2008.06996">Krotov & Hopfield (2021)</a>, and <a href="https://bhoov.com/hamux/">Hoover et al. (2022)</a> for more details)</span>.
         Specifically, in this demo we choose
       </p>
 
@@ -127,7 +138,7 @@
       </p>
 
       <p>
-        These Lagrangians dictate the visible states <span class="aside"
+        These Lagrangians dictate the axonal states <span class="aside"
           >(activations)</span
         >
         of each variable.
@@ -157,7 +168,7 @@
 
       <blockquote>
         All variables in Associative Memories have a special Lagrangian function
-        that defines the visible state and the energy of that variable.
+        that defines the axonal state and the energy of that variable.
       </blockquote>
 
       <p>
@@ -168,8 +179,8 @@
         >. Each of these three variables is dynamic
         <span class="aside">(evolves in time)</span>.
         <em
-          >The Lagrangian constraints ensure that the dynamics of our network
-          will converge to a fixed point.</em
+          >The convexity of the Lagrangians ensures that the dynamics of our
+          network will converge to a fixed point.</em
         >
       </p>
 
@@ -206,7 +217,7 @@
 
       <p>
         {@html align(
-          String.raw`E_\theta(x, y, z) &= E_x + E_y + E_z + \frac{1}{2} \left[ \sum\limits_\mu z_\mu (\sum\limits_i \theta^\mathrm{image}_{\mu i} - x_i)^2 \right] - \lambda \sum\limits_{\mu} \sum\limits_k z_\mu \theta^\mathrm{label}_{\mu k} y_k\\
+          String.raw`E_\theta(x, y, z) &= E_x + E_y + E_z + \frac{1}{2} \left[ \sum\limits_\mu z_\mu (\sum\limits_i \theta^\mathrm{image}_{\mu i} - x_i)^2 - \frac{1}{2} \sum\limits_i x_i^2\right] - \lambda \sum\limits_{\mu} \sum\limits_k z_\mu \theta^\mathrm{label}_{\mu k} y_k\\
             &= E_x + E_y + E_z + E_{xz} + E_{yz}
             `
         )}
@@ -316,13 +327,13 @@
 
       <p>
         This global energy function {@html math(String.raw`E_\theta(x,y,z)`)} turns
-        our images, labels, and memories into dynamic variables whose hidden states
+        our images, labels, and memories into dynamic variables whose internal states
         evolve according to the following differential equations:
       </p>
 
       <p>
         {@html alignStar(String.raw`
-          \tau_x \frac{d\hat{x}_i}{dt} &= -\frac{\partial E_\theta}{\partial x_i} = \sum\limits_\mu z_\mu \left( \theta^\mathrm{image}_{\mu i} - x_i \right) - \hat{x}_i\\
+          \tau_x \frac{d\hat{x}_i}{dt} &= -\frac{\partial E_\theta}{\partial x_i} = \sum\limits_\mu z_\mu \left( \theta^\mathrm{image}_{\mu i} - x_i \right)\\
           \tau_y \frac{d\hat{y}_k}{dt} &= -\frac{\partial E_\theta}{\partial y_k} = \lambda \sum\limits_\mu z_\mu \theta^\mathrm{label}_{\mu k} - \hat{y}_k\\
           \tau_z \frac{d\hat{z}_\mu}{dt} &= -\frac{\partial E_\theta}{\partial z_\mu} = - \frac{1}{2}  \sum\limits_i \left(\theta^\mathrm{image}_{\mu i} - x_i \right)^2  + \lambda \sum\limits_k \theta^\mathrm{label}_{\mu k} y_k - \hat{z}_\mu\\
           `)}
@@ -349,7 +360,6 @@
           >(forcing {@html math(String.raw`\frac{d\hat{x}}{dt} = 0`)})</span
         > and allowing only the label to evolve.
       </p>
-
     </div>
   </div>
 </div>
