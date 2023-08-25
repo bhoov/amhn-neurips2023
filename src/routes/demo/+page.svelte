@@ -82,7 +82,7 @@
       </blockquote>
 
       <p>
-        The structure of our data in the demo above is a collection <code
+        The structure of our data in the demo above is a collection of <code
           >(image, label)</code
         >
         pairs, where each <em>image variable</em>
