@@ -22504,7 +22504,7 @@ l0,-`+(t+144)+`c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
         equals the original headshot)`),Lr=ee(`.
       `),cn=ge("em"),pr=ee("See "),Qn=ge("a"),Cr=ee("below"),or=ee(` for a more technical description of
         the demo.`),ks=et(),Br=ge("div"),D6(gn.$$.fragment),_u=et(),ia=ge("div"),at=ge("div"),Ri=ge("h2"),h2=ee("The Anatomy of our Hopfield Network"),d2=et(),Oi=ge("blockquote"),p2=ee("An "),Fu=ge("em"),f2=ee("Associative Memory"),m2=ee(` is a dynamical system that is concerned with
-        the memorization and retrieval of data.`),g2=et(),Dn=ge("p"),y2=ee("The structure of our data in the demo above is a collection "),Mu=ge("code"),b2=ee("(image, label)"),v2=ee(`
+        the memorization and retrieval of data.`),g2=et(),Dn=ge("p"),y2=ee("The structure of our data in the demo above is a collection of "),Mu=ge("code"),b2=ee("(image, label)"),v2=ee(`
         pairs, where each `),zu=ge("em"),x2=ee("image variable"),w2=et(),wd=new gt(!1),Sd=ee(` is represented
         as a rasterized vector of the RGB pixels and each
         `),Lu=ge("em"),S2=ee("label variable"),k2=et(),kd=new gt(!1),Nd=ee(` identifies
@@ -22606,7 +22606,7 @@ l0,-`+(t+144)+`c-2,-159.3,-10,-310.7,-24,-454c-53.3,-528,-210,-949.7,
         equals the original headshot)`),Qx.forEach(le),Lr=te(Po,`.
       `),cn=ye(Po,"EM",{});var sf=de(cn);pr=te(sf,"See "),Qn=ye(sf,"A",{href:!0});var e8=de(Qn);Cr=te(e8,"below"),e8.forEach(le),or=te(sf,` for a more technical description of
         the demo.`),sf.forEach(le),Po.forEach(le),As.forEach(le),ks=tt(Ui),Br=ye(Ui,"DIV",{style:!0});var t8=de(Br);R6(gn.$$.fragment,t8),t8.forEach(le),_u=tt(Ui),ia=ye(Ui,"DIV",{class:!0});var n8=de(ia);at=ye(n8,"DIV",{class:!0});var ht=de(at);Ri=ye(ht,"H2",{id:!0});var r8=de(Ri);h2=te(r8,"The Anatomy of our Hopfield Network"),r8.forEach(le),d2=tt(ht),Oi=ye(ht,"BLOCKQUOTE",{class:!0});var af=de(Oi);p2=te(af,"An "),Fu=ye(af,"EM",{});var s8=de(Fu);f2=te(s8,"Associative Memory"),s8.forEach(le),m2=te(af,` is a dynamical system that is concerned with
-        the memorization and retrieval of data.`),af.forEach(le),g2=tt(ht),Dn=ye(ht,"P",{class:!0});var mr=de(Dn);y2=te(mr,"The structure of our data in the demo above is a collection "),Mu=ye(mr,"CODE",{});var a8=de(Mu);b2=te(a8,"(image, label)"),a8.forEach(le),v2=te(mr,`
+        the memorization and retrieval of data.`),af.forEach(le),g2=tt(ht),Dn=ye(ht,"P",{class:!0});var mr=de(Dn);y2=te(mr,"The structure of our data in the demo above is a collection of "),Mu=ye(mr,"CODE",{});var a8=de(Mu);b2=te(a8,"(image, label)"),a8.forEach(le),v2=te(mr,`
         pairs, where each `),zu=ye(mr,"EM",{});var i8=de(zu);x2=te(i8,"image variable"),i8.forEach(le),w2=tt(mr),wd=yt(mr,!1),Sd=te(mr,` is represented
         as a rasterized vector of the RGB pixels and each
         `),Lu=ye(mr,"EM",{});var o8=de(Lu);S2=te(o8,"label variable"),o8.forEach(le),k2=tt(mr),kd=yt(mr,!1),Nd=te(mr,` identifies
