@@ -27,6 +27,6 @@ In the world of artificial neural networks, a canonical mathematical model of th
 
 **The OpenReview submission is now open**: [link](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN)
 
-The submission deadline is: **September 29**, 2023 23:59 AOE
+The submission deadline is: **October 6** 2023 23:59 AOE ~~**September 29**, 2023 23:59 AOE~~
 
 The format of submissions is 4-page papers (+ references) using the workshop's LaTeX template [LaTeX template](/amhn2023_latex_template.zip "download"). Supplementary materials / appendices after the references are allowed and do not count towards the page limit. Submissions should be anonymized and should not include any identifying information about author identities or affiliations. There are no formal proceedings generated from this workshop. Accepted papers will be made public on OpenReview. The reviewing process will be double-blind. In assessing submitted contributions we will use the same rules for conflicts of interest as are used in the main track NeurIPS conference, e.g. reviewers cannot be from the same organization as authors, recent coauthors cannot review each other's submissions. While we welcome short versions of published papers, preference will be given to new and not yet published work.
