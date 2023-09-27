@@ -10,8 +10,8 @@ organizers:
 speakers:
 	python train_hopfield_people.py _data/speakers.yaml static/models/speakers
 
-deploy-site:
+OLD-deploy-site:
 	npm run build && npm run deploy
 
-deploy-all: all-models
+OLD-deploy-all: all-models
 	npm run build && npm run deploy
