@@ -16,6 +16,8 @@
   <div class="hero-text">
     <h1>AMHN Workshop @NeurIPS 2023</h1>
     <h3>Associative Memory & Hopfield Networks</h3>
+    <div class="text-2xl my-4 font-bold">December 15, 2023 08:15-17:30 CT </div>
+    <div class="font-light ml-4 text-xl">Room 223</div>
   </div>
 </div>
 
@@ -35,6 +37,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    max-width: 786px;
+    padding: 1rem 2rem;
     transform: translate(-50%, -50%);
     color: inherit;
     h1 {
