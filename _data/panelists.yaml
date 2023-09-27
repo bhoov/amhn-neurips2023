@@ -1,3 +1,10 @@
+- name: Blaise Agüera y Arcas
+  headshot: blaise.png
+  url: https://en.wikipedia.org/wiki/Blaise_Ag%C3%BCera_y_Arcas
+  blurb: 
+  affiliations:
+    - Google Research
+
 - name: Benjamin Hoover
   headshot: hoover.png
   url: https://bhoov.com
@@ -18,4 +25,13 @@
   headshot: onabola.png
   blurb: 
   affiliations:
-    - MILA
+    - RBI
+
+- name: Hendrik Strobelt
+  headshot: strobelt.png
+  url: http://hendrik.strobelt.com/
+  blurb: 
+  role: moderator
+  affiliations:
+    - IBM Research
+    - MIT-IBM

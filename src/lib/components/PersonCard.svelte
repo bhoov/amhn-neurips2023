@@ -24,7 +24,7 @@
     <img src={img} alt={person.name} class="portrait">
     <div style="width: 100%; display: flex; flex-direction: column; align-items: start;margin-top: .5em;">
 
-        <div style="text-align: center;">{person.name}</div>
+        <div style="text-align: center;">{person.name} {#if person.role}<span class="text-xs font-light text-gray-300">({person.role})</span>{/if} </div>
         <div style="font-size: 13px;margin-top:0.2rem;color:gray">{@html affiliation}</div>
     </div>
 </a>
