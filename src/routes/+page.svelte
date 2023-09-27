@@ -81,13 +81,13 @@
       </div>
     </div>
 
-    <div id="schedule"></div>
+    <!-- <div id="schedule"></div>
     <h2>(Tentative) Schedule</h2>
 
     <p>Times are reported in CT (New Orleans local time)</p>
 
     <img src="/img/amhn_schedule.png" alt="(Tentative) Day of Proceedings">
-
+-->
     <div id="contact"></div>
     <h2>Contact Us</h2>
 
