@@ -19,6 +19,7 @@
             {label: "Call", href: "/cfp/"},
             {label: "Related Papers", href: "/papers/"},
             {label: "Demo", href: "/demo"},
+            {label: "Schedule", href: "/#schedule"},
             {label: "Contact", href: "/#contact"},
             // {label: "Speakers", href: "/#speakers"},
             // {label: "Panelists", href: "/#panelists"},

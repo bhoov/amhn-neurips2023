@@ -85,7 +85,7 @@
     <div id="schedule"></div>
     <h2>Schedule <span class="text-sm text-gray-400 font-light">(tentative)</span></h2>
 
-    <p>Times are reported in CT (New Orleans local time)</p>
+    <p>Times are reported in CT (New Orleans local time) on December 15, 2023. All events in Room 223.</p>
 
     <Schedule/>
 
