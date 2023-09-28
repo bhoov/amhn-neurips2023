@@ -1,19 +1,19 @@
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-  <table class="w-full text-sm text-left text-gray-700 dark:text-gray-400">
-    <thead class="text-xs text-gray-700 uppercase bg-gray-200">
-      <tr>
+  <table class="w-full text-sm text-left text-gray-700">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-300">
+      <tr class="">
         <th scope="col" class="">Time</th>
         <th scope="col" class="">Event</th>
         <th scope="col" class="">Participants</th>
       </tr>
     </thead>
     <tbody>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th scope="row" class="">08:15-08:25</th>
         <td class="">Opening Remarks</td>
         <td class="">M. J. Zaki <span class="affiliation">(RPI)</span></td>
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -24,7 +24,7 @@
           >J. Hopfield <span class="affiliation">(Princeton U)</span></td
         >
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -33,7 +33,7 @@
         <td class="">Invited</td>
         <td class="">I. Fiete <span class="affiliation">(MIT)</span></td>
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -42,7 +42,7 @@
         <td class="">Invited</td>
         <td class="">D. Krotov <span class="affiliation">(MIT-IBM)</span></td>
       </tr>
-      <tr class="bg-gray-100 border-b">
+      <tr class="break">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -51,7 +51,7 @@
         <td class="">Coffee Break</td>
         <td class="" />
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -60,7 +60,7 @@
         <td class="">Contributed Talk #1</td>
         <td class="">--</td>
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -71,7 +71,7 @@
           >S. Hochreiter <span class="affiliation">(JKU Linz)</span></td
         >
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -82,7 +82,7 @@
           >C. Lucibello <span class="affiliation">(Bocconi U)</span></td
         >
       </tr>
-      <tr class="bg-gray-100 border-b">
+      <tr class="break">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -91,7 +91,7 @@
         <td class="">Lunch Break</td>
         <td class="" />
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -102,7 +102,7 @@
           >K. Choromanski <span class="affiliation">(Google)</span></td
         >
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -132,7 +132,7 @@
           </div>
         </td>
       </tr>
-      <tr class="bg-gray-100 border-b">
+      <tr class="break">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -141,7 +141,7 @@
         <td class="">Coffee Break</td>
         <td class="" />
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -150,7 +150,7 @@
         <td class="">Contributed Talk #2</td>
         <td class="">--</td>
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -159,7 +159,7 @@
         <td class="">Contributed Talk #3</td>
         <td class="">--</td>
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class=" font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -168,7 +168,7 @@
         <td class="">Contributed Talk #4</td>
         <td class="">--</td>
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class=" font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -177,7 +177,7 @@
         <td class="">Poster Session</td>
         <td class="" />
       </tr>
-      <tr class="bg-white border-b">
+      <tr class="">
         <th
           scope="row"
           class=" font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -202,13 +202,17 @@
  -->
 
 <style lang="postcss">
+  tbody > tr {
+    @apply bg-gray-100 border-b;
+  }
+
   tr > td {
     @apply px-3 py-2 md:px-6 md:py-4;
     max-width: 210px;
   }
 
   tr > th {
-    @apply px-3 py-2 md:px-6 md:py-4 font-medium text-gray-900 whitespace-nowrap;
+    @apply px-3 py-2 md:px-6 md:py-4 text-gray-900 whitespace-nowrap font-light;
     /* @apply px-6 py-4; */
   }
 
@@ -222,5 +226,9 @@
 
   .panelists {
     @apply flex flex-col gap-y-1 flex-wrap pl-3 -indent-3;
+  }
+
+  .break {
+    @apply bg-gray-300 border-b;
   }
 </style>
