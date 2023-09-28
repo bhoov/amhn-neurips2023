@@ -3,6 +3,7 @@
   import AMNH_NavBar from "$lib/components/AMNH_NavBar.svelte";
   import { onMount } from "svelte";
   import PersonCard from "$lib/components/PersonCard.svelte";
+  import Schedule from "$lib/components/Schedule.svelte";
 
   export let data;
 
@@ -81,13 +82,15 @@
       </div>
     </div>
 
-    <!-- <div id="schedule"></div>
-    <h2>(Tentative) Schedule</h2>
+    <div id="schedule"></div>
+    <h2>Schedule <span class="text-sm text-gray-400 font-light">(tentative)</span></h2>
 
     <p>Times are reported in CT (New Orleans local time)</p>
 
-    <img src="/img/amhn_schedule.png" alt="(Tentative) Day of Proceedings">
--->
+    <Schedule/>
+
+    <!-- <img src="/img/amhn_schedule.png" alt="(Tentative) Day of Proceedings"> -->
+
     <div id="contact"></div>
     <h2>Contact Us</h2>
 
