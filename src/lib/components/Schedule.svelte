@@ -1,6 +1,6 @@
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg dark">
   <table class="w-full text-sm text-left text-gray-700">
-    <thead class="text-xs text-gray-700 uppercase bg-gray-300">
+    <thead class="text-xs text-gray-700 uppercase sched-bg break">
       <tr class="">
         <th scope="col" class="">Time</th>
         <th scope="col" class="">Event</th>
@@ -16,7 +16,7 @@
       <tr class="">
         <th
           scope="row"
-          class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          class="font-medium whitespace-nowrap dark:text-white"
           >08:25-08:45</th
         >
         <td class="">Introductory Words on HN</td>
@@ -30,7 +30,7 @@
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >08:45-09:20</th
         >
-        <td class="">Invited</td>
+        <td class="">Invited Talk</td>
         <td class="">I. Fiete <span class="affiliation">(MIT)</span></td>
       </tr>
       <tr class="">
@@ -39,7 +39,7 @@
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >09:20-09:55</th
         >
-        <td class="">Invited</td>
+        <td class="">Invited Talk</td>
         <td class="">D. Krotov <span class="affiliation">(MIT-IBM)</span></td>
       </tr>
       <tr class="break">
@@ -66,7 +66,7 @@
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >10:45-11:20</th
         >
-        <td class="">Invited</td>
+        <td class="">Invited Talk</td>
         <td class=""
           >S. Hochreiter <span class="affiliation">(JKU Linz)</span></td
         >
@@ -77,7 +77,7 @@
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >11:20-11:55</th
         >
-        <td class="">Invited</td>
+        <td class="">Invited Talk</td>
         <td class=""
           >C. Lucibello <span class="affiliation">(Bocconi U)</span></td
         >
@@ -97,7 +97,7 @@
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >13:30-14:05</th
         >
-        <td class="">Invited</td>
+        <td class="">Invited Talk</td>
         <td class=""
           >K. Choromanski <span class="affiliation">(Google)</span></td
         >
@@ -108,7 +108,7 @@
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >14:05-15:00</th
         >
-        <td class="">Panel: Modern Hopfield Nets meet Software Engineering</td>
+        <td class=""><div class="font-extrabold">Panel</div><div class="font-light italic">Hopfield Networks meet Software Engineering</div></td>
         <td class="">
           <div class="panelists">
             <span class="panelist"
@@ -201,7 +201,7 @@
 
  -->
 
-<style lang="postcss">
+<style lang="scss">
   tbody > tr {
     @apply bg-gray-100 border-b;
   }
@@ -230,5 +230,40 @@
 
   .break {
     @apply bg-gray-300 border-b;
+  }
+
+
+  .dark {
+    tbody > tr {
+      @apply border-b text-gray-200 border-gray-600;
+      background-color: #232C33;
+      // color: text-
+    }
+
+    tr > td {
+      @apply px-3 py-2 md:px-6 md:py-4;
+      max-width: 210px;
+    }
+
+    tr > th {
+      @apply px-3 py-2 md:px-6 md:py-4 text-gray-100 whitespace-nowrap font-light;
+      /* @apply px-6 py-4; */
+    }
+
+    thead * > th {
+      @apply px-3 md:px-6 md:py-4 font-bold text-gray-400;
+    }
+
+    .affiliation {
+      @apply text-gray-400 font-light;
+    }
+
+    .panelists {
+      @apply flex flex-col gap-y-1 flex-wrap pl-3 -indent-3;
+    }
+
+    .break {
+      @apply bg-gray-900 border-b;
+    }
   }
 </style>
