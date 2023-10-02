@@ -115,10 +115,10 @@
               >B. Aguera y Arcas <span class="affiliation">(Google)</span></span
             >
             <span class="panelist"
-              >O. Onabola <span class="affiliation">(RBI)</span></span
+              >B. Hoover <span class="affiliation">(GA Tech)</span></span
             >
             <span class="panelist"
-              >B. Hoover <span class="affiliation">(GA Tech)</span></span
+              >O. Onabola <span class="affiliation">(RBI)</span></span
             >
             <span class="panelist"
               >B. Pham <span class="affiliation">(RPI)</span></span
