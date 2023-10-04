@@ -4,6 +4,8 @@
 
 We invite submissions on novel research results (theoretical and empirical), software frameworks and abstractions, benchmarks, demos, visualizations, and work-in-progress research. The format of submissions is **4-page papers** (excluding references) submitted to [OpenReview](https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN). The reviews will not be shared publicly.
 
+The papers at the intersection of physics, neuroscience, and biology will be considered for a Special Collection on Associative Memory and Hopfield Networks in [PRX Life](https://journals.aps.org/prxlife), a highly selective and fully open access journal focusing on topics at the interface of physics and biology. The publication fees will be waived for all accepted manuscripts in the Collection.
+
 ## Scope
 
 Associative memory is defined as a network that can link a set of features into high-dimensional vectors, called memories. Prompted by a large enough subset of features taken from one memory, an animal or an AI network with an associative memory can retrieve the rest of the features belonging to that memory. The diverse human cognitive abilities which involve making appropriate responses to stimulus patterns can often be understood as the operation of an associative memory, with the memories often being distillations and consolidations of multiple experiences rather than merely corresponding to a single event.
