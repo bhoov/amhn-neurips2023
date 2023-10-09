@@ -34,15 +34,21 @@
 
     <div id="participation" />
     <h2>Participation</h2>
+    <p />
     <p>
-      Please see the <a href="/cfp" style="color:inherit;">Call for Papers</a>
-      and
-      <a href="/papers" style="color:inherit;">Related Work</a> pages.
+      <span class="italic">Paper submissions are now closed.</span>
+      Author notification by: <strong>October 25</strong> 2023 23:59 AOE.
     </p>
 
-    <p>Author notification by: <strong>October 25</strong> 2023 23:59 AOE.
+    <p>
+      All are welcome to attend! Check out the <a href="/cfp" style="color:inherit;"
+        >Call for Papers</a
+      >
+      and
+      <a href="/papers" style="color:inherit;">Related Work</a> pages for details on the kind of content that will be presented.
+    </p>
 
-
+    <p />
     <p>
       Questions? Email the organizers at <a href="mailto:amhn2023@gmail.com"
         >amhn2023@gmail.com</a
@@ -85,16 +91,21 @@
       </div>
     </div>
 
-    <div id="schedule"></div>
-    <h2>Schedule <span class="text-sm text-gray-400 font-light">(tentative)</span></h2>
+    <div id="schedule" />
+    <h2>
+      Schedule <span class="text-sm text-gray-400 font-light">(tentative)</span>
+    </h2>
 
-    <p>Times are reported in CT (New Orleans local time) on December 15, 2023. All events in Room 223.</p>
+    <p>
+      Times are reported in CT (New Orleans local time) on December 15, 2023.
+      All events in Room 223.
+    </p>
 
-    <Schedule/>
+    <Schedule />
 
     <!-- <img src="/img/amhn_schedule.png" alt="(Tentative) Day of Proceedings"> -->
 
-    <div id="contact"></div>
+    <div id="contact" />
     <h2>Contact Us</h2>
 
     <p>
