@@ -40,6 +40,9 @@
       <a href="/papers" style="color:inherit;">Related Work</a> pages.
     </p>
 
+    <p>Author notification by: <strong>October 25</strong> 2023 23:59 AOE.
+
+
     <p>
       Questions? Email the organizers at <a href="mailto:amhn2023@gmail.com"
         >amhn2023@gmail.com</a
