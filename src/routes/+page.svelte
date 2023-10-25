@@ -37,7 +37,7 @@
     <p />
     <p>
       <span class="italic">Paper submissions are now closed.</span>
-      Author notification by: <strong>October 25</strong> 2023 23:59 AOE.
+      Author notification by: <strong>October 26</strong> 2023 23:59 AOE.
     </p>
 
     <p>
