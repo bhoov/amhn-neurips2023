@@ -1,207 +1,122 @@
-- name: Sugandha Sharma
-  email:
-  blurb:
+- name: Jascha Achterberg
   affiliations:
-    - MIT
-  headshot:
-  url:
-
-- name: Hamza Tahir Chaudhry
-  email:
-  blurb:
+    - Cambridge University
+- name: Francisco Acosta
   affiliations:
-    - Harvard
-  headshot:
-  url:
-
-- name: Jacob Zavatone-Veth
-  email:
-  blurb:
+    - UCSB
+- name: Luca Ambrogioni
   affiliations:
-    - Harvard
-  headshot:
-  url:
-
+    - Radboud University Nijmegen
+- name: Ludovica Bachschmid-Romano
+  affiliations:
+    - Duke University
 - name: Tom Burns
-  email:
-  blurb:
   affiliations:
     - Brown
     - OIST
-  headshot:
-  url:
-
-- name: Bishwajit Saha
-  email:
-  blurb:
-  affiliations:
-    - RPI
-  headshot:
-  url:
-
-# - name: Trenton Bricken
-#   email:
-#   blurb:
-#   affiliations:
-#     - Anthropic
-#   headshot:
-#   url:
-
-- name: Mikail Khona
-  email:
-  blurb:
-  affiliations:
-    - MIT
-  headshot:
-  url:
-
-- name: Hidenori Tanaka
-  email:
-  blurb:
-  affiliations:
-    - Harvard University
-  headshot:
-  url:
-
-# - name: Dongsung Huh
-#   email:
-#   blurb:
-#   affiliations:
-#     - IBM Research
-#   headshot:
-#   url:
-
-# - name: Bishwajit Saha
-#   email:
-#   blurb:
-#   affiliations:
-#     - RPI
-#   headshot:
-#   url:
-
-# - name: Danil Tyulmankov
-#   email:
-#   blurb:
-#   affiliations:
-#     - Columbia
-#   headshot:
-#   url:
-
-# - name: Zachary Sethna
-#   email:
-#   blurb:
-#   affiliations:
-#     - MSK
-#   headshot:
-#   url:
-
-- name: Satyananda Kashyap
-  email:
-  blurb:
-  affiliations:
-    - IBM Research
-  headshot:
-  url:
-
-# - name: Beren Millidge
-#   email:
-#   blurb:
-#   affiliations:
-#     - Oxford
-#   headshot:
-#   url:
-
 - name: Tankut Can
-  email:
-  blurb:
   affiliations:
     - IAS
-  headshot:
-  url:
-- name: Andrey Gromov
-  email:
-  blurb:
+- name: Hamza Tahir Chaudhry
   affiliations:
-    - FAIR, Meta AI
-  headshot:
-  url:
-
+    - Harvard
+- name: Elvis Dohmatob
+  affiliations:
+    - Facebook
+- name: Niharika Shimona D'Souza
+  affiliations:
+    - IBM Research
+- name: Tom George
+  affiliations:
+    - University College London
+    - University of London
 - name: Paolo Glorioso
-  email:
-  blurb:
   affiliations:
     - Stanford
-  headshot:
-  url:
-
-# - name: Tom George
-#   email:
-#   blurb:
-#   affiliations:
-#     - UCL
-#   headshot:
-#   url:
-
-- name: Andy Keller
-  email:
-  blurb:
+- name: Cédric Goemaere
   affiliations:
-    - University of Amsterdam
-  headshot:
-  url:
-
-# - name: Siavash Golkar
-#   email:
-#   blurb:
-#   affiliations:
-#     - Flatiron Institute
-#   headshot:
-#   url:
-
-- name: David Lipshutz
-  email:
-  blurb:
+    - Universiteit Gent
+- name: Andrey Gromov
   affiliations:
-    - Flatiron Institute
-  headshot:
-  url:
-
-# - name: Arian Khorasani
-#   email:
-#   blurb:
-#   affiliations:
-#     - MILA
-#   headshot:
-#   url:
-
-- name: Jascha Achterberg
-  email:
-  blurb:
+    - FAIR, Meta AI
+- name: Benjamin Hoover
   affiliations:
-    - Cambridge University
-  headshot:
-  url:
-
-# - name: Binxu Wang
-#   email:
-#   blurb:
-#   affiliations:
-#     - Harvard
-#   headshot:
-#   url:
-
-- name: Francisco Acosta
-  email:
-  blurb:
-  affiliations:
-    - UCSB
-  headshot:
-  url:
-
-- name: Leo Kozachkov
-  email:
-  blurb:
+    - Georgia Tech
+- name: Jaedong Hwang
   affiliations:
     - MIT
-  headshot:
-  url:
+- name: Arjun Karuvally
+  affiliations:
+    - University of Massachusetts, Amherst
+- name: Satyananda Kashyap
+  affiliations:
+    - IBM Research
+- name: Andy Keller
+  affiliations:
+    - University of Amsterdam
+- name: Mikail Khona
+  affiliations:
+    - MIT
+- name: Felix Koulischer
+  affiliations:
+    - Universiteit Gent
+- name: Leo Kozachkov
+  affiliations:
+    - MIT
+- name: Dmitry Krotov
+  affiliations:
+    - MIT-IBM
+- name: Tianjin Li
+  affiliations:
+    - University of Oxford
+- name: David Lipshutz
+  affiliations:
+    - Flatiron Institute
+- name: Yao Lu
+  affiliations:
+    - Peking University
+- name: Siddharth Mansingh
+  affiliations:
+    - University of Illinois at Urbana-Champaign
+- name: Juston Moore
+  affiliations:
+    - Los Alamos National Laboratory
+- name: Sujaya Neupane
+  affiliations:
+    - MIT
+- name: Bao Pham
+  affiliations:
+    - RPI
+- name: Bishwajit Saha
+  affiliations:
+    - RPI
+- name: Pablo Sartori
+  affiliations:
+    - MPI PKS
+- name: Rylan Schaeffer
+  affiliations:
+    - Stanford
+- name: Bernhard Schäfl
+  affiliations:
+    - Johannes Kepler University Linz
+- name: Sugandha Sharma
+  affiliations:
+    - MIT
+- name: Mufeng Tang
+  affiliations:
+    - University of Oxford
+- name: Tom Van Der Meersch
+  affiliations:
+    - Universiteit Gent
+- name: Binxu Wang
+  affiliations:
+    - Harvard
+- name: BingKan Xue
+  affiliations:
+    - University of Florida
+- name: Maria Yampolskaya
+  affiliations:
+    - Boston University
+- name: Jacob Zavatone-Veth
+  affiliations:
+    - Harvard

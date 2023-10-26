@@ -116,7 +116,7 @@
 
     <div id="committee">
       <h2>Program Commitee</h2>
-      <ul>
+      <ul class="md:grid grid-cols-2 gap-x-8">
         {#each data.committee as person}
           <li>
             {#if person.url != null}
