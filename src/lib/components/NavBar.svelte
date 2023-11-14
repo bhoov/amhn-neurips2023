@@ -1,61 +1,66 @@
 <!-- credits: https://linguinecode.com/post/create-a-navbar-in-svelte-->
 <script>
-  import {onMount} from "svelte";
+    import { onMount } from "svelte";
 
-  // Show mobile icon and display menu
-  let showMobileMenu = false;
+    // Show mobile icon and display menu
+    let showMobileMenu = false;
 
-  export let logoName = "AMHN '23"
-  // List of navigation items
-  export let navItems = [
-    {label: "Item 1", href: "#"},
-    {label: "Item 2", href: "#"},
-    {label: "Item 3", href: "#"},
-  ];
+    export let logoName = "AMHN '23";
+    // List of navigation items
+    export let navItems = [
+        { label: "Item 1", href: "#" },
+        { label: "Item 2", href: "#" },
+        { label: "Item 3", href: "#" },
+        { label: "Item 4", href: "#", newTab: true },
+    ];
 
-  // Mobile menu click event handler
-  const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
+    // Mobile menu click event handler
+    const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
 
-  // Media match query handler
-  const mediaQueryHandler = e => {
-    // Reset mobile state
-    if (!e.matches) {
-      showMobileMenu = false;
-    }
-  };
+    // Media match query handler
+    const mediaQueryHandler = (e) => {
+        // Reset mobile state
+        if (!e.matches) {
+            showMobileMenu = false;
+        }
+    };
 
-  // Attach media query listener on mount hook
-  onMount(() => {
-    const mediaListener = window.matchMedia("(max-width: 767px)");
+    // Attach media query listener on mount hook
+    onMount(() => {
+        const mediaListener = window.matchMedia("(max-width: 767px)");
 
-    mediaListener.addEventListener("change", mediaQueryHandler);
-  });
+        mediaListener.addEventListener("change", mediaQueryHandler);
+    });
 </script>
 
 <nav>
     <div class="inner">
-        <div on:click={handleMobileIconClick}
-             class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
-            <div class="middle-line"></div>
+        <div
+            on:click={handleMobileIconClick}
+            class={`mobile-icon${showMobileMenu ? " active" : ""}`}
+        >
+            <div class="middle-line" />
         </div>
-            <div style="white-space: nowrap;"><a href="/">{logoName}</a> </div>
-<!--        <div style="display: flex; flex-direction: row; justify-content: space-around;">-->
+        <div style="white-space: nowrap;"><a href="/">{logoName}</a></div>
+        <!--        <div style="display: flex; flex-direction: row; justify-content: space-around;">-->
 
-            <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
-                {#each navItems as item}
-                    <li>
+        <ul class={`navbar-list${showMobileMenu ? " mobile" : ""}`}>
+            {#each navItems as item}
+                <li>
+                    {#if item.newTab}
+                        <a href={item.href} target="_blank">{item.label}</a>
+                    {:else}
                         <a href={item.href}>{item.label}</a>
-                    </li>
-                {/each}
-            </ul>
+                    {/if}
+                </li>
+            {/each}
+        </ul>
 
-
-<!--        </div>-->
+        <!--        </div>-->
     </div>
 </nav>
 
 <style lang="scss">
-
     nav {
         //background-color: rgba(0, 0, 0, 0.8);
         //font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -69,11 +74,10 @@
         //margin: auto;
         box-sizing: border-box;
         display: flex;
-      justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
         height: 100%;
-      gap:5px;
-
+        gap: 5px;
     }
 
     .mobile-icon {
@@ -158,12 +162,10 @@
     .navbar-list li {
         list-style-type: none;
         position: relative;
-
     }
 
     .navbar-list li:hover {
         background-color: #424245;
-
     }
 
     .navbar-list.mobile li:before {
@@ -176,7 +178,7 @@
         background-color: #424245;
     }
 
-     a {
+    a {
         color: #fff;
         text-decoration: none;
         display: flex;

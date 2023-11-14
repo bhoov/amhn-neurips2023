@@ -19,7 +19,7 @@
             {label: "Call", href: "/cfp/"},
             {label: "Related Papers", href: "/papers/"},
             {label: "Demo", href: "/demo"},
-            {label: "Schedule", href: "/#schedule"},
+            {label: "Schedule", href: "https://neurips.cc/virtual/2023/workshop/66524", newTab: true},
             {label: "Contact", href: "/#contact"},
             // {label: "Speakers", href: "/#speakers"},
             // {label: "Panelists", href: "/#panelists"},
