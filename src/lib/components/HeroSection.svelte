@@ -15,7 +15,7 @@
   </div>
   <div class="hero-text">
     <h1>AMHN Workshop @NeurIPS 2023</h1>
-    <h3>Associative Memory & Hopfield Networks</h3>
+    <h3><a href="https://neurips.cc/virtual/2023/workshop/66524" target="_blank">Associative Memory & Hopfield Networks</a></h3>
     <div class="text-2xl my-4 font-bold">December 15, 2023 08:15-17:30 CT </div>
     <div class="font-light ml-4 text-xl">Room 223</div>
   </div>

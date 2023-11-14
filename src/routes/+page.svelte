@@ -37,15 +37,18 @@
     <p />
     <p>
       <span class="italic">Paper submissions are now closed.</span>
-      Author notification by: <strong>October 26</strong> 2023 23:59 AOE.
     </p>
 
     <p>
-      All are welcome to attend! Check out the <a href="/cfp" style="color:inherit;"
-        >Call for Papers</a
+      All are welcome to attend! Visit the <a
+        href="https://neurips.cc/virtual/2023/workshop/66524"
+        target="_blank">official NeurIPS workshop page</a
       >
+      for details on the content that will be presented. For more information, feel
+      free to check out
+      <a href="/cfp" style="color:inherit;">Call for Papers</a>
       and
-      <a href="/papers" style="color:inherit;">Related Work</a> pages for details on the kind of content that will be presented.
+      <a href="/papers" style="color:inherit;">Related Work</a> pages.
     </p>
 
     <p />
@@ -92,17 +95,23 @@
     </div>
 
     <div id="schedule" />
-    <h2>
-      Schedule <span class="text-sm text-gray-400 font-light">(tentative)</span>
-    </h2>
+    <h2>Schedule</h2>
 
     <p>
-      Times are reported in CT (New Orleans local time) on December 15, 2023.
-      All events in Room 223.
+      The official schedule has been released! Please visit the <a
+        href="https://neurips.cc/virtual/2023/workshop/66524"
+        target="_blank">official NeurIPS site</a
+      > for an up-to-date schedule.
     </p>
+    <!-- 
+    <div>
+      <p>
+        Times are reported in CT (New Orleans local time) on December 15, 2023.
+        All events in Room 223.
+      </p>
 
-    <Schedule />
-
+      <Schedule />
+    </div> -->
     <!-- <img src="/img/amhn_schedule.png" alt="(Tentative) Day of Proceedings"> -->
 
     <div id="contact" />
