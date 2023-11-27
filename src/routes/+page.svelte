@@ -97,12 +97,16 @@
     <div id="schedule" />
     <h2>Schedule</h2>
 
-    <p>
-      The official schedule has been released! Please visit the <a
-        href="https://neurips.cc/virtual/2023/workshop/66524"
-        target="_blank">official NeurIPS site</a
-      > for an up-to-date schedule.
+    <p class="">
+      The following times are reported in CT (New Orleans local time) on December 15, 2023.
+      <span class="italic text-gray-400">
+        Please login to the <a
+          href="https://neurips.cc/virtual/2023/workshop/66524"
+          target="_blank">official NeurIPS site</a
+        > for an up-to-date schedule.
+      </span>
     </p>
+    <Schedule/>
     <!-- 
     <div>
       <p>
