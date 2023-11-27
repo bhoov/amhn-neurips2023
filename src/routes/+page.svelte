@@ -40,12 +40,14 @@
     </p>
 
     <p>
-      All are welcome to attend! Visit the <a
-        href="https://neurips.cc/virtual/2023/workshop/66524"
-        target="_blank">official NeurIPS workshop page</a
+      All are welcome to attend! See accepted papers at <a
+        href="https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN"
+        >OpenReview</a
       >
-      for details on the content that will be presented. For more information, feel
-      free to check out
+      (or login to the
+      <a href="https://neurips.cc/virtual/2023/workshop/66524" target="_blank"
+        >official NeurIPS workshop page</a
+      >). For more information, feel free to check out the original
       <a href="/cfp" style="color:inherit;">Call for Papers</a>
       and
       <a href="/papers" style="color:inherit;">Related Work</a> pages.
@@ -98,15 +100,16 @@
     <h2>Schedule</h2>
 
     <p class="">
-      The following times are reported in CT (New Orleans local time) on December 15, 2023.
+      The following times are reported in CT (New Orleans local time) on
+      December 15, 2023.
       <span class="italic text-gray-400">
         Please login to the <a
           href="https://neurips.cc/virtual/2023/workshop/66524"
           target="_blank">official NeurIPS site</a
-        > for an up-to-date schedule.
+        > for detailed day-of proceedings and the zoom link.
       </span>
     </p>
-    <Schedule/>
+    <Schedule />
     <!-- 
     <div>
       <p>

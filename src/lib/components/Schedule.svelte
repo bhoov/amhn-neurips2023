@@ -1,3 +1,7 @@
+<script>
+  import SpeakerList from "./SpeakerList.svelte";
+</script>
+
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg dark">
   <table class="w-full text-sm text-left text-gray-700">
     <thead class="text-xs text-gray-700 uppercase sched-bg break">
@@ -11,37 +15,76 @@
       <tr class="">
         <th scope="row" class="">08:15-08:25</th>
         <td class="">Opening Remarks</td>
-        <td class="">M. J. Zaki <span class="affiliation">(RPI)</span></td>
+        <td class="">
+          <SpeakerList
+            speakers={[{ name: "Mohammed Zaki", affiliation: "RPI" }]}
+          />
+        </td>
+      </tr>
+      <tr class="">
+        <th scope="row" class="font-medium whitespace-nowrap dark:text-white"
+          >08:25-08:40</th
+        >
+        <td class="">Introductory Words on Hopfield Networks</td>
+        <td class="">
+          <SpeakerList
+            speakers={[
+              { name: "John J. Hopfield", affiliation: "Princeton U" },
+            ]}
+          />
+        </td>
       </tr>
       <tr class="">
         <th
           scope="row"
-          class="font-medium whitespace-nowrap dark:text-white"
-          >08:25-08:45</th
+          class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >08:40-09:15</th
         >
-        <td class="">Introductory Words on HN</td>
         <td class=""
-          >J. Hopfield <span class="affiliation">(Princeton U)</span></td
+          >Trading off pattern number and richness: A new associative memory
+          model based on pre-structured low-dimensional manifolds that saturates
+          the information bound regardless of number of memories</td
         >
+        <td class="">
+          <SpeakerList speakers={[{ name: "Ila Fiete", affiliation: "MIT" }]} />
+        </td>
       </tr>
       <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >08:45-09:20</th
+          >09:15-09:50</th
         >
-        <td class="">Invited Talk</td>
-        <td class="">I. Fiete <span class="affiliation">(MIT)</span></td>
+        <td class=""
+          >Dense Associative Memory for Novel Transformer Architectures</td
+        >
+        <td class="">
+          <SpeakerList
+            speakers={[{ name: "Dmitry Krotov", affiliation: "MIT-IBM" }]}
+          />
+        </td>
       </tr>
       <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >09:20-09:55</th
+          >09:50-10:00</th
         >
-        <td class="">Invited Talk</td>
-        <td class="">D. Krotov <span class="affiliation">(MIT-IBM)</span></td>
-      </tr>
+        <td class=""
+          >Rapid Learning without Catastrophic Forgetting in the Morris Water
+          Maze</td
+        >
+        <td class="">
+          <SpeakerList
+            speakers={[
+              { name: "Raymond Wang", affiliation: "MIT" },
+              { name: "Jaedong Hwang", affiliation: "MIT" },
+              { name: "Akhilan Boopathy", affiliation: "MIT" },
+              { name: "Ila Fieta", affiliation: "MIT" },
+            ]}
+          />
+        </td></tr
+      >
       <tr class="break">
         <th
           scope="row"
@@ -55,32 +98,62 @@
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >10:30-10:45</th
+          >10:30-10:40</th
         >
-        <td class="">Contributed Talk #1</td>
-        <td class="">--</td>
+        <td class=""
+          >Sequential Learning and Retrieval in a Sparse Distributed Memory: The
+          K-winner Modern Hopfield Network</td
+        >
+        <td class="">
+          <SpeakerList
+            speakers={[
+              { name: "Shaunak Bhandarkar", affiliation: "Stanford" },
+              { name: "James McClelland", affiliation: "Stanford" },
+            ]}
+          />
+        </td>
       </tr>
       <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >10:45-11:20</th
+          >10:40-10:50</th
         >
-        <td class="">Invited Talk</td>
         <td class=""
-          >S. Hochreiter <span class="affiliation">(JKU Linz)</span></td
+          >In search of dispersed memories: Generative diffusion models are
+          associative memory networks</td
         >
+        <td class="">
+          <SpeakerList
+            speakers={[{ name: "Luca Ambrogioni", affiliation: "Radboud U" }]}
+          />
+        </td>
       </tr>
       <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >11:20-11:55</th
+          >10:50-11:25</th
         >
-        <td class="">Invited Talk</td>
-        <td class=""
-          >C. Lucibello <span class="affiliation">(Bocconi U)</span></td
+        <td class="">Memory Architectures for Deep Learning</td>
+        <td class="">
+          <SpeakerList
+            speakers={[{ name: "Sepp Hochreiter", affiliation: "JKU Linz" }]}
+          />
+        </td>
+      </tr>
+      <tr class="">
+        <th
+          scope="row"
+          class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >11:25-12:00</th
         >
+        <td class="">The Exponential Capacity of Dense Associative Memories</td>
+        <td class="">
+          <SpeakerList
+            speakers={[{ name: "Carlo Lucibello", affiliation: "Bocconi U" }]}
+          />
+        </td>
       </tr>
       <tr class="break">
         <th
@@ -97,10 +170,14 @@
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >13:30-14:05</th
         >
-        <td class="">Invited Talk</td>
-        <td class=""
-          >K. Choromanski <span class="affiliation">(Google)</span></td
-        >
+        <td class="">Transformers as Associative Memory Machines</td>
+        <td class="">
+          <SpeakerList
+            speakers={[
+              { name: "Krzysztof Choromanski", affiliation: "Google" },
+            ]}
+          />
+        </td>
       </tr>
       <tr class="">
         <th
@@ -108,28 +185,22 @@
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
           >14:05-15:00</th
         >
-        <td class=""><div class="font-extrabold">Panel</div><div class="font-light italic">Hopfield Networks meet Software Engineering</div></td>
+        <td class=""
+          ><div class="font-extrabold">Panel</div>
+          <div class="font-light italic">
+            Hopfield Networks meet Software Engineering
+          </div></td
+        >
         <td class="">
-          <div class="panelists">
-            <span class="panelist"
-              >B. Aguera y Arcas <span class="affiliation">(Google)</span></span
-            >
-            <span class="panelist"
-              >B. Hoover <span class="affiliation">(GA Tech)</span></span
-            >
-            <span class="panelist"
-              >O. Onabola <span class="affiliation">(RBI)</span></span
-            >
-            <span class="panelist"
-              >B. Pham <span class="affiliation">(RPI)</span></span
-            >
-            <span class="text-gray-400 font-light">(More to come...)</span>
-            <span class="panelist"
-              >Moderated by H. Strobelt <span class="affiliation"
-                >(MIT-IBM)</span
-              ></span
-            >
-          </div>
+          <SpeakerList
+            speakers={[
+              { name: "Blaise Aguera y Arcas", affiliation: "Google" },
+              { name: "Olawale Onabola", affiliation: "RBI" },
+              { name: "Bao Pham", affiliation: "RPI" },
+              { name: "Benjamin Hoover", affiliation: "GA Tech" },
+              { name: "Hendrik Strobelt", affiliation: "MIT-IBM" },
+            ]}
+          />
         </td>
       </tr>
       <tr class="break">
@@ -145,36 +216,87 @@
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >15:30-15:45</th
+          >15:30-15:40</th
         >
-        <td class="">Contributed Talk #2</td>
-        <td class="">--</td>
+        <td class="">Hopfield Boosting for Out-of-Distribution Detection</td>
+        <td class="">
+          <SpeakerList
+            speakers={[
+              { name: "Claus Hofmann", affiliation: "JKU Linz" },
+              { name: "Simon Schmid", affiliation: "JKU Linz" },
+              { name: "Bernhard Lehner", affiliation: "JKU Linz" },
+              { name: "Daniel Klotz", affiliation: "JKU Linz" },
+              { name: "Sepp Hochreiter", affiliation: "JKU Linz" },
+            ]}
+          />
+        </td>
       </tr>
       <tr class="">
         <th
           scope="row"
           class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >15:45-16:00</th
+          >15:40-15:50</th
         >
-        <td class="">Contributed Talk #3</td>
-        <td class="">--</td>
+        <td class="">Long Sequence Hopfield Memory</td>
+        <td class="">
+          <SpeakerList
+            speakers={[
+              { name: "Hamza Chaudhry", affiliation: "Harvard" },
+              { name: "Jacob Zavatone-Veth", affiliation: "Harvard" },
+              { name: "Dmitry Krotov", affiliation: "MIT-IBM" },
+              { name: "Cengiz Pehlevan", affiliation: "Harvard" },
+            ]}
+          />
+        </td>
+      </tr>
+      <tr class="">
+        <th
+          scope="row"
+          class="font-medium text-gray-900 whitespace-nowrap dark:text-white"
+          >15:50-16:00</th
+        >
+        <td class=""
+          >Associative Transformer is a Sparse Representation Learner</td
+        >
+        <td class="">
+          <SpeakerList
+            speakers={[
+              { name: "Yuwei Sun", affiliation: "UTokyo" },
+              { name: "Hideya Ochiai", affiliation: "UTokyo" },
+              { name: "Zhirong Wu" },
+              { name: "Stephen Lin" },
+              { name: "Ryota Kanai" },
+            ]}
+          />
+        </td>
       </tr>
       <tr class="">
         <th
           scope="row"
           class=" font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >16:00-16:15</th
+          >16:00-16:10</th
         >
-        <td class="">Contributed Talk #4</td>
-        <td class="">--</td>
+        <td class=""
+          >Retrieving k-Nearest Memories with Modern Hopfield Networks</td
+        >
+        <td class="">
+          <SpeakerList
+            speakers={[
+              { name: "Alexander Davydov" },
+              { name: "Sean Jaffe" },
+              { name: "Ambuj K Singh" },
+              { name: "Francesco Bullo" },
+            ]}
+          />
+        </td>
       </tr>
-      <tr class="">
+      <tr class="break">
         <th
           scope="row"
           class=" font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >16:15-17:25</th
+          >16:10-17:25</th
         >
-        <td class="">Poster Session</td>
+        <td class="">Poster Session (in-person)</td>
         <td class="" />
       </tr>
       <tr class="">
@@ -184,22 +306,15 @@
           >17:25-17:30</th
         >
         <td class="">Closing Remarks</td>
-        <td class="">P. Ram <span class="affiliation">(IBM Research)</span></td>
+        <td class="">
+          <SpeakerList
+            speakers={[{ name: "Parikshit Ram", affiliation: "IBM Research" }]}
+          />
+        </td>
       </tr>
     </tbody>
   </table>
 </div>
-
-<!-- 
-  header less bold, data content more bold
-  Color by Section
-  Collect styles in table
-  "TBD" instead of "--"
-  Hover to change color
-  Less vertical padding
-  Prettify list of panelists
-
- -->
 
 <style lang="scss">
   tbody > tr {
@@ -224,7 +339,7 @@
     @apply text-gray-400 font-light;
   }
 
-  .panelists {
+  .speaker-list {
     @apply flex flex-col gap-y-1 flex-wrap pl-3 -indent-3;
   }
 
@@ -232,11 +347,10 @@
     @apply bg-gray-300 border-b;
   }
 
-
   .dark {
     tbody > tr {
       @apply border-b text-gray-200 border-gray-600;
-      background-color: #232C33;
+      background-color: #232c33;
       // color: text-
     }
 
@@ -258,7 +372,7 @@
       @apply text-gray-400 font-light;
     }
 
-    .panelists {
+    .speaker-list {
       @apply flex flex-col gap-y-1 flex-wrap pl-3 -indent-3;
     }
 
