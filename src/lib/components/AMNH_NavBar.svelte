@@ -16,8 +16,9 @@
 <div style="position: fixed; left:0; right:0;z-index:10"
      style:top={navBarTop+'px'}>
     <NavBar logoName="AMHN" navItems={[
-            {label: "Call", href: "/cfp/"},
-            {label: "Related Papers", href: "/papers/"},
+            // {label: "Call", href: "/cfp/"},
+            {label: "Accepted Papers", href: "https://openreview.net/group?id=NeurIPS.cc/2023/Workshop/AMHN", newTab: true},
+            // {label: "Related Papers", href: "/papers/"},
             {label: "Demo", href: "/demo"},
             {label: "Schedule", href: "https://neurips.cc/virtual/2023/workshop/66524", newTab: true},
             {label: "Contact", href: "/#contact"},
