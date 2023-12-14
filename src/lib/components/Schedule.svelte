@@ -198,6 +198,9 @@
               { name: "Olawale Onabola", affiliation: "RBI" },
               { name: "Bao Pham", affiliation: "RPI" },
               { name: "Benjamin Hoover", affiliation: "GA Tech" },
+              { name: "Dmitry Krotov", affiliation: "IBM Research" },
+              { name: "Sepp Hochreiter", affiliation: "U. of Linz" },
+              { name: "Krzysztof Choromanski", affiliation: "DeepMind" },
               { name: "Hendrik Strobelt", affiliation: "MIT-IBM" },
             ]}
           />
