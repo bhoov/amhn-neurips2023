@@ -33,6 +33,7 @@
 	export let svgPadding = 0.1; // Frac padding (relative to pixels) on each side
 	export let lineGraphLen = 500;
 	export let pauseWhenNotOnScreen = false;
+	export let autoplay = true;
 
 	let container: HTMLDivElement;
 	let scrollY: number = 0;
@@ -54,12 +55,12 @@
 	$: minX = config.people.reduce((acc, x) => R.min(acc, x.proj2d[0]), Infinity);
 	$: maxX = config.people.reduce(
 		(acc, x) => R.max(acc, x.proj2d[0]),
-		-Infinity
+		-Infinity,
 	);
 	$: minY = config.people.reduce((acc, x) => R.min(acc, x.proj2d[1]), Infinity);
 	$: maxY = config.people.reduce(
 		(acc, x) => R.max(acc, x.proj2d[1]),
-		-Infinity
+		-Infinity,
 	);
 
 	$: xRange = [minX, maxX];
@@ -130,7 +131,7 @@
 				img.values = tf.browser.fromPixels(hiddenImage).div(255).dataSync();
 				tf.browser.toPixels(
 					img.toTensor().reshape([170, 128, 3]) as tf.Tensor3D,
-					imgCanvas
+					imgCanvas,
 				);
 				hiddenImage.onload = () => {};
 			};
@@ -143,7 +144,7 @@
 			pathJoin([configDir, config.model_dir, "model.json"]),
 			{
 				onProgress: (p) => (modelProgress = Math.round(p * 100)),
-			}
+			},
 		);
 		graphModel.then(async (model) => {
 			const modelHelper = TFJSInterface(model, ["x2", "energy", "proj_x2"]);
@@ -166,7 +167,7 @@
 				tf.engine().endScope();
 				tf.browser.toPixels(
 					img.toTensor().reshape([170, 128, 3]) as tf.Tensor3D,
-					imgCanvas
+					imgCanvas,
 				);
 				return true;
 			}
@@ -184,6 +185,11 @@
 				console.log("Rendered?");
 			});
 		isMounted = true;
+		setInterval(() => {
+			if (isPlaying && autoplay) {
+				selectedLabel = (selectedLabel + 1) % config.people.length;
+			}
+		}, 3000);
 	});
 </script>
 
@@ -261,7 +267,7 @@
 				{#each config.people as person, i}
 					<g
 						transform={`translate(${xScale(person.proj2d[0])}, ${yScale(
-							person.proj2d[1]
+							person.proj2d[1],
 						)})`}
 						on:click={() => {
 							selectedLabel = i;
