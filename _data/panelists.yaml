@@ -14,7 +14,8 @@
     - IBM Research
 
 - name: Bao Pham
-  url: https://lemon-cmd.github.io/
+  # url: https://lemon-cmd.github.io/
+  url: bhqpham
   headshot: pham.png
   blurb: 
   affiliations:
@@ -26,6 +27,29 @@
   blurb: 
   affiliations:
     - RBI
+
+- name: Dmitry Krotov
+  url: https://mitibmwatsonailab.mit.edu/people/dmitry-krotov/
+  headshot: krotov.png
+  blurb: 
+  affiliations:
+    - IBM Research
+    - MIT-IBM
+    
+- name: Sepp Hochreiter
+  url: https://www.jku.at/en/institute-for-machine-learning/about-us/team/sepp-hochreiter/
+  headshot: hochreiter.png
+  blurb: 
+  affiliations:
+    - University of Linz
+
+- name: Krzysztof Choromanski
+  url: https://www.engineering.columbia.edu/krzysztof-choromanski
+  headshot: choromanski.png
+  blurb: 
+  affiliations:
+    - Google DeepMind
+    - Columbia
 
 - name: Hendrik Strobelt
   headshot: strobelt.png
